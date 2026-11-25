@@ -1,0 +1,4005 @@
+{
+ "components": {
+  "examples": {
+   "bank-account": {
+    "value": {
+     "_links": {
+      "bankLink": {
+       "href": "/bank-links/enrollment_792dcb7d"
+      },
+      "self": {
+       "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+      },
+      "transactions": {
+       "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11?bankAccountId=3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+      }
+     },
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "bankLinkId": "enrollment_792dcb7d",
+     "cardIds": [
+      "5dec2c49-0aa5-4683-a317-427eb5d115f3"
+     ],
+     "cards": [],
+     "createdAt": "2025-10-03T10:55:42.000Z",
+     "currency": "USD",
+     "externalId": "plaid_acc_792dcb7d",
+     "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+     "institutionName": "Chase",
+     "lastSyncedAt": "2025-10-03T11:12:07.000Z",
+     "mask": "1234",
+     "name": "Checking",
+     "state": "active",
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+     "subscriptionState": "active",
+     "type": "checking",
+     "updatedAt": "2025-10-03T10:55:42.000Z"
+    }
+   },
+   "bank-link": {
+    "value": {
+     "_links": {
+      "bankAccounts": [
+       {
+        "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+       }
+      ],
+      "self": {
+       "href": "/bank-links/enrollment_792dcb7d"
+      }
+     },
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "bankAccounts": [
+      {
+       "cardIds": [
+        "5dec2c49-0aa5-4683-a317-427eb5d115f3"
+       ],
+       "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+       "mask": "4001",
+       "name": "Credit Card",
+       "type": "credit"
+      }
+     ],
+     "completedAt": "2025-10-03T10:55:42.000Z",
+     "createdAt": "2025-10-03T10:25:27.069Z",
+     "hostedLink": null,
+     "id": "enrollment_792dcb7d",
+     "linkExpiresAt": null,
+     "state": "completed",
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11"
+    }
+   },
+   "bank-subscription": {
+    "value": {
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "connectionId": "conn_abc123def456",
+     "createdAt": "2025-10-03T10:55:42.000Z",
+     "id": "e4b7c9a2-1d3f-4e8a-9c6b-5f2d7a0e8b1c",
+     "institutionName": "Chase",
+     "provider": "PLAID",
+     "state": "active",
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+     "syncCursor": null,
+     "updatedAt": "2025-10-03T10:55:42.000Z",
+     "webhook": {
+      "status": "confirmed",
+      "url": "https://example.com/webhooks/banking"
+     }
+    }
+   },
+   "bank-transaction": {
+    "value": {
+     "_links": {
+      "bankAccount": {
+       "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+      },
+      "card": {
+       "href": "/cards/5dec2c49-0aa5-4683-a317-427eb5d115f3"
+      },
+      "match": {
+       "href": "/transaction-matches/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e"
+      },
+      "self": {
+       "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c"
+      }
+     },
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "amount": 42.5,
+     "bankAccountId": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+     "cardId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+     "category": [
+      "Travel"
+     ],
+     "createdAt": "2025-10-15T14:30:00.000Z",
+     "currency": "USD",
+     "date": "2025-10-15",
+     "description": "UBER TRIP",
+     "id": "7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c",
+     "matchId": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+     "merchantName": "Uber",
+     "settlement": {
+      "emissionType": "early_clearing",
+      "emittedAt": "2025-10-15T15:00:00.000Z",
+      "state": "early_cleared",
+      "supersededAt": null
+     },
+     "source": "PLAID",
+     "status": "early_cleared",
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+     "transactionType": "debit"
+    }
+   },
+   "transaction-match": {
+    "value": {
+     "_links": {
+      "bankTransaction": {
+       "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c"
+      },
+      "card": {
+       "href": "/cards/5dec2c49-0aa5-4683-a317-427eb5d115f3"
+      },
+      "cardTransaction": {
+       "href": "/transaction-messages/a9b8c7d6-e5f4-3a2b-1c0d-9e8f7a6b5c4d"
+      },
+      "self": {
+       "href": "/transaction-matches/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e"
+      }
+     },
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "bankTransaction": {
+      "amount": 42.5,
+      "currency": "USD",
+      "date": "2025-10-15",
+      "description": "UBER TRIP",
+      "merchantName": "Uber"
+     },
+     "bankTransactionId": "7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c",
+     "cardTransaction": {
+      "amount": 42.5,
+      "cardId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+      "currency": "USD",
+      "date": "2025-10-15",
+      "descriptor": "UBER TRIP"
+     },
+     "cardTransactionId": "a9b8c7d6-e5f4-3a2b-1c0d-9e8f7a6b5c4d",
+     "confidence": "HIGH",
+     "createdAt": "2025-10-15T14:31:00.000Z",
+     "id": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+     "reasons": [
+      {
+       "bankValue": "42.50",
+       "cardValue": "42.50",
+       "diff": 0,
+       "message": "Exact amount match ($42.50)",
+       "score": 1,
+       "type": "Amount"
+      },
+      {
+       "bankValue": "2025-10-15",
+       "cardValue": "2025-10-15",
+       "diff": 0,
+       "message": "Transaction dates within 1 day",
+       "score": 0.9,
+       "type": "Date"
+      },
+      {
+       "bankValue": "Uber",
+       "cardValue": "UBER TRIP",
+       "diff": 0,
+       "message": "Merchant name contains match (Uber)",
+       "score": 0.85,
+       "type": "Merchant"
+      }
+     ],
+     "score": 0.85,
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11"
+    }
+   }
+  },
+  "parameters": {
+   "bank-account-id": {
+    "example": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "in": "path",
+    "name": "bankAccountId",
+    "required": true,
+    "schema": {
+     "format": "uuid",
+     "type": "string"
+    }
+   },
+   "bank-account-id-2": {
+    "example": "2b9c1e77-5a3d-4c8b-9f21-6d0e4a7b8c90",
+    "in": "query",
+    "name": "bankAccountId",
+    "required": false,
+    "schema": {
+     "format": "uuid",
+     "type": "string"
+    }
+   },
+   "bank-account-state": {
+    "example": "active",
+    "in": "query",
+    "name": "state",
+    "required": false,
+    "schema": {
+     "enum": [
+      "active",
+      "auth_required",
+      "disconnected"
+     ],
+     "type": "string"
+    }
+   },
+   "bank-link-id": {
+    "example": "enrollment_792dcb7d",
+    "in": "path",
+    "name": "bankLinkId",
+    "required": true,
+    "schema": {
+     "maxLength": 256,
+     "minLength": 1,
+     "pattern": "^[a-zA-Z0-9_-]+$",
+     "type": "string"
+    }
+   },
+   "bank-link-state": {
+    "example": "completed",
+    "in": "query",
+    "name": "state",
+    "required": false,
+    "schema": {
+     "enum": [
+      "pending",
+      "completed",
+      "expired"
+     ],
+     "type": "string"
+    }
+   },
+   "bank-subscription-id": {
+    "example": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+    "in": "path",
+    "name": "bankSubscriptionId",
+    "required": true,
+    "schema": {
+     "format": "uuid",
+     "type": "string"
+    }
+   },
+   "bank-transaction-id": {
+    "example": "7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c",
+    "in": "query",
+    "name": "bankTransactionId",
+    "required": false,
+    "schema": {
+     "format": "uuid",
+     "type": "string"
+    }
+   },
+   "banking-limit": {
+    "example": 250,
+    "in": "query",
+    "name": "limit",
+    "required": false,
+    "schema": {
+     "default": 250,
+     "maximum": 1000,
+     "minimum": 1,
+     "type": "integer"
+    }
+   },
+   "card-id-2": {
+    "example": "8164683a-8d23-4421-9694-1a81fc9b9c37",
+    "in": "query",
+    "name": "cardId",
+    "required": false,
+    "schema": {
+     "format": "uuid",
+     "type": "string"
+    }
+   },
+   "card-transaction-id": {
+    "example": "a9b8c7d6-e5f4-3a2b-1c0d-9e8f7a6b5c4d",
+    "in": "query",
+    "name": "cardTransactionId",
+    "required": false,
+    "schema": {
+     "format": "uuid",
+     "type": "string"
+    }
+   },
+   "connection-id": {
+    "example": "conn_abc123def456",
+    "in": "path",
+    "name": "connectionId",
+    "required": true,
+    "schema": {
+     "type": "string"
+    }
+   },
+   "cursor": {
+    "example": "ZXhhbXBsZQ==",
+    "in": "query",
+    "name": "cursor",
+    "required": false,
+    "schema": {
+     "type": "string"
+    }
+   },
+   "end-date": {
+    "example": "2025-10-31",
+    "in": "query",
+    "name": "endDate",
+    "required": false,
+    "schema": {
+     "format": "date",
+     "type": "string"
+    }
+   },
+   "matched": {
+    "example": "true",
+    "in": "query",
+    "name": "matched",
+    "required": false,
+    "schema": {
+     "enum": [
+      "true",
+      "false"
+     ],
+     "type": "string"
+    }
+   },
+   "max-amount": {
+    "example": 500,
+    "in": "query",
+    "name": "maxAmount",
+    "required": false,
+    "schema": {
+     "type": "number"
+    }
+   },
+   "min-amount": {
+    "example": 10,
+    "in": "query",
+    "name": "minAmount",
+    "required": false,
+    "schema": {
+     "type": "number"
+    }
+   },
+   "min-confidence": {
+    "example": "MEDIUM",
+    "in": "query",
+    "name": "minConfidence",
+    "required": false,
+    "schema": {
+     "default": "MEDIUM",
+     "enum": [
+      "HIGH",
+      "MEDIUM",
+      "LOW"
+     ],
+     "type": "string"
+    }
+   },
+   "start-date": {
+    "example": "2025-10-01",
+    "in": "query",
+    "name": "startDate",
+    "required": false,
+    "schema": {
+     "format": "date",
+     "type": "string"
+    }
+   },
+   "subaccount-id": {
+    "example": "2fd4d402-b759-479c-87a6-58d85e345356",
+    "in": "query",
+    "name": "subaccountId",
+    "required": false,
+    "schema": {
+     "format": "uuid",
+     "type": "string"
+    }
+   },
+   "subaccount-id-2": {
+    "example": "24c4f90d-ab3b-4f6e-8a1d-d251a4fcf34c",
+    "in": "path",
+    "name": "subaccountId",
+    "required": true,
+    "schema": {
+     "format": "uuid",
+     "type": "string"
+    }
+   },
+   "transaction-id": {
+    "example": "9340721f-bdce-4afa-bd9d-26cceb9d2176",
+    "in": "path",
+    "name": "transactionId",
+    "required": true,
+    "schema": {
+     "format": "uuid",
+     "type": "string"
+    }
+   },
+   "transaction-match-id": {
+    "example": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+    "in": "path",
+    "name": "transactionMatchId",
+    "required": true,
+    "schema": {
+     "format": "uuid",
+     "type": "string"
+    }
+   },
+   "transaction-type": {
+    "example": "debit",
+    "in": "query",
+    "name": "transactionType",
+    "required": false,
+    "schema": {
+     "enum": [
+      "debit",
+      "credit"
+     ],
+     "type": "string"
+    }
+   }
+  },
+  "responses": {
+   "banking_bad_gateway": {
+    "content": {
+     "application/json": {
+      "example": {
+       "error": "Bad Gateway",
+       "message": "Provider refresh failed; try again later",
+       "statusCode": 502
+      },
+      "schema": {
+       "$ref": "#/components/schemas/banking-error"
+      }
+     }
+    }
+   },
+   "banking_bad_request": {
+    "content": {
+     "application/json": {
+      "examples": {
+       "Invalid request": {
+        "value": {
+         "error": "Bad Request",
+         "message": "Invalid cardId",
+         "statusCode": 400
+        }
+       },
+       "Refusal with a code": {
+        "value": {
+         "code": "INVALID_CURSOR",
+         "message": "Invalid cursor format",
+         "statusCode": 400
+        }
+       }
+      },
+      "schema": {
+       "$ref": "#/components/schemas/banking-error"
+      }
+     }
+    }
+   },
+   "banking_conflict": {
+    "content": {
+     "application/json": {
+      "example": {
+       "message": "Bank link 3fa85f64-5717-4562-b3fc-2c963f66afa6 is not completed. Current state: pending",
+       "statusCode": 409
+      },
+      "schema": {
+       "$ref": "#/components/schemas/banking-error"
+      }
+     }
+    }
+   },
+   "banking_link_create_forbidden": {
+    "content": {
+     "application/json": {
+      "examples": {
+       "Account not set up": {
+        "value": {
+         "code": "BANK_ENROLLMENT_DISABLED",
+         "message": "Bank linking is not enabled for this card on this account",
+         "reason": "network-not-allowed",
+         "statusCode": 403
+        }
+       },
+       "Missing banking:write": {
+        "value": {
+         "error": "Forbidden",
+         "message": "Insufficient permissions. Required scopes: banking:write",
+         "statusCode": 403
+        }
+       }
+      },
+      "schema": {
+       "$ref": "#/components/schemas/banking-error"
+      }
+     }
+    }
+   },
+   "banking_not_found": {
+    "content": {
+     "application/json": {
+      "example": {
+       "error": "Not Found",
+       "message": "Bank account not found",
+       "statusCode": 404
+      },
+      "schema": {
+       "$ref": "#/components/schemas/banking-error"
+      }
+     }
+    }
+   },
+   "banking_owner_not_configured": {
+    "content": {
+     "application/json": {
+      "example": {
+       "code": "BANK_FEED_OWNER_NOT_CONFIGURED",
+       "message": "Cardholder bank linking is not available yet",
+       "statusCode": 503
+      },
+      "schema": {
+       "$ref": "#/components/schemas/banking-error"
+      }
+     }
+    }
+   },
+   "banking_read_forbidden": {
+    "content": {
+     "application/json": {
+      "example": {
+       "error": "Forbidden",
+       "message": "Insufficient permissions. Required scopes: banking:read",
+       "statusCode": 403
+      },
+      "schema": {
+       "$ref": "#/components/schemas/banking-error"
+      }
+     }
+    }
+   },
+   "banking_server_error": {
+    "content": {
+     "application/json": {
+      "example": {
+       "message": "Internal server error",
+       "statusCode": 500
+      },
+      "schema": {
+       "$ref": "#/components/schemas/banking-error"
+      }
+     }
+    }
+   },
+   "banking_service_unavailable": {
+    "content": {
+     "application/json": {
+      "example": {
+       "message": "Bank institution temporarily unavailable (Plaid INSTITUTION_DOWN); sync will retry later.",
+       "statusCode": 503
+      },
+      "schema": {
+       "$ref": "#/components/schemas/banking-error"
+      }
+     }
+    }
+   },
+   "banking_staff_only_forbidden": {
+    "content": {
+     "application/json": {
+      "example": {
+       "error": "Forbidden",
+       "message": "Insufficient permissions. Required scopes: banking:admin",
+       "statusCode": 403
+      },
+      "schema": {
+       "$ref": "#/components/schemas/banking-error"
+      }
+     }
+    }
+   },
+   "banking_write_forbidden": {
+    "content": {
+     "application/json": {
+      "example": {
+       "error": "Forbidden",
+       "message": "Insufficient permissions. Required scopes: banking:write",
+       "statusCode": 403
+      },
+      "schema": {
+       "$ref": "#/components/schemas/banking-error"
+      }
+     }
+    }
+   },
+   "unauthorized": {
+    "content": {
+     "application/problem+json": {
+      "example": {
+       "detail": "Authentication credentials were either missing or incorrect.",
+       "title": "Unauthorized"
+      },
+      "schema": {
+       "$ref": "#/components/schemas/problem"
+      }
+     }
+    }
+   }
+  },
+  "schemas": {
+   "bank-account": {
+    "properties": {
+     "_links": {
+      "$ref": "#/components/schemas/bank-account-links"
+     },
+     "accountId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "bankLinkId": {
+      "nullable": true,
+      "type": "string"
+     },
+     "cardIds": {
+      "items": {
+       "format": "uuid",
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "cards": {
+      "items": {
+       "$ref": "#/components/schemas/bank-feed-card"
+      },
+      "type": "array"
+     },
+     "createdAt": {
+      "format": "date-time",
+      "type": "string"
+     },
+     "currency": {
+      "maxLength": 3,
+      "minLength": 3,
+      "type": "string"
+     },
+     "externalId": {
+      "type": "string"
+     },
+     "id": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "institutionId": {
+      "nullable": true,
+      "type": "string"
+     },
+     "institutionName": {
+      "type": "string"
+     },
+     "lastSyncedAt": {
+      "format": "date-time",
+      "nullable": true,
+      "type": "string"
+     },
+     "mask": {
+      "nullable": true,
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "noLinkReason": {
+      "enum": [
+       "bulk_card_owns_mask",
+       "mask_ambiguous_accounts",
+       "mask_ambiguous_cards",
+       "card_linked_elsewhere",
+       "card_not_attachable",
+       "no_institution_id",
+       "mask_matches_no_plausible_card"
+      ],
+      "nullable": true,
+      "type": "string"
+     },
+     "state": {
+      "enum": [
+       "active",
+       "auth_required",
+       "disconnected"
+      ],
+      "type": "string"
+     },
+     "subaccountId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "subscriptionState": {
+      "enum": [
+       "active",
+       "error",
+       "auth_required",
+       "disconnected"
+      ],
+      "nullable": true,
+      "type": "string"
+     },
+     "subtype": {
+      "nullable": true,
+      "type": "string"
+     },
+     "type": {
+      "enum": [
+       "checking",
+       "savings",
+       "prepaid",
+       "credit",
+       "loan",
+       "investment",
+       "other"
+      ],
+      "type": "string"
+     },
+     "updatedAt": {
+      "format": "date-time",
+      "type": "string"
+     }
+    },
+    "required": [
+     "_links",
+     "id",
+     "accountId",
+     "subaccountId",
+     "externalId",
+     "institutionName",
+     "cardIds",
+     "cards",
+     "name",
+     "currency",
+     "type",
+     "state",
+     "createdAt",
+     "updatedAt"
+    ],
+    "type": "object"
+   },
+   "bank-account-backfill-params": {
+    "properties": {
+     "endDate": {
+      "format": "date",
+      "type": "string"
+     },
+     "loadHistoric": {
+      "type": "boolean"
+     },
+     "startDate": {
+      "format": "date",
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "bank-account-backfill-result": {
+    "properties": {
+     "id": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "matchesFound": {
+      "type": "integer"
+     },
+     "transactionsProcessed": {
+      "type": "integer"
+     }
+    },
+    "required": [
+     "id",
+     "transactionsProcessed",
+     "matchesFound"
+    ],
+    "type": "object"
+   },
+   "bank-account-cards-update": {
+    "properties": {
+     "backfill": {
+      "$ref": "#/components/schemas/bank-account-cards-update-backfill"
+     },
+     "cardIds": {
+      "items": {
+       "format": "uuid",
+       "type": "string"
+      },
+      "type": "array"
+     }
+    },
+    "required": [
+     "cardIds"
+    ],
+    "title": "Link or replace linked cards",
+    "type": "object"
+   },
+   "bank-account-cards-update-backfill": {
+    "properties": {
+     "endDate": {
+      "format": "date",
+      "type": "string"
+     },
+     "startDate": {
+      "format": "date",
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "bank-account-disconnect": {
+    "properties": {
+     "cardId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "reason": {
+      "maxLength": 256,
+      "type": "string"
+     },
+     "state": {
+      "enum": [
+       "disconnected"
+      ],
+      "type": "string"
+     }
+    },
+    "required": [
+     "state"
+    ],
+    "title": "Disconnect the account",
+    "type": "object"
+   },
+   "bank-account-link-cards-params": {
+    "additionalProperties": false,
+    "properties": {
+     "subaccountId": {
+      "format": "uuid",
+      "type": "string"
+     }
+    },
+    "required": [
+     "subaccountId"
+    ],
+    "type": "object"
+   },
+   "bank-account-link-cards-result": {
+    "properties": {
+     "linked": {
+      "additionalProperties": {
+       "items": {
+        "format": "uuid",
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "type": "object"
+     }
+    },
+    "required": [
+     "linked"
+    ],
+    "type": "object"
+   },
+   "bank-account-links": {
+    "properties": {
+     "bankLink": {
+      "$ref": "#/components/schemas/link"
+     },
+     "self": {
+      "$ref": "#/components/schemas/link"
+     },
+     "transactions": {
+      "$ref": "#/components/schemas/link"
+     }
+    },
+    "required": [
+     "self",
+     "transactions"
+    ],
+    "type": "object"
+   },
+   "bank-account-list": {
+    "properties": {
+     "items": {
+      "items": {
+       "$ref": "#/components/schemas/bank-account"
+      },
+      "type": "array"
+     },
+     "pagination": {
+      "$ref": "#/components/schemas/cursor-pagination"
+     }
+    },
+    "required": [
+     "items",
+     "pagination"
+    ],
+    "type": "object"
+   },
+   "bank-account-maintenance-params": {
+    "additionalProperties": false,
+    "properties": {
+     "backfillJunctionLast4": {
+      "default": false,
+      "type": "boolean"
+     },
+     "createCardholderCards": {
+      "default": false,
+      "type": "boolean"
+     },
+     "mint": {
+      "default": false,
+      "type": "boolean"
+     },
+     "subaccountId": {
+      "format": "uuid",
+      "type": "string"
+     }
+    },
+    "required": [
+     "subaccountId"
+    ],
+    "type": "object"
+   },
+   "bank-account-maintenance-result": {
+    "properties": {
+     "cardholderCards": {
+      "$ref": "#/components/schemas/bank-account-maintenance-result-cardholderCards"
+     },
+     "failures": {
+      "additionalProperties": {
+       "type": "string"
+      },
+      "type": "object"
+     },
+     "junctionLast4": {
+      "$ref": "#/components/schemas/bank-account-maintenance-result-junctionLast4"
+     },
+     "linked": {
+      "additionalProperties": {
+       "items": {
+        "format": "uuid",
+        "type": "string"
+       },
+       "type": "array"
+      },
+      "type": "object"
+     },
+     "minted": {
+      "additionalProperties": {
+       "$ref": "#/components/schemas/bank-account-maintenance-result-minted-value"
+      },
+      "type": "object"
+     },
+     "skipped": {
+      "additionalProperties": {
+       "type": "string"
+      },
+      "type": "object"
+     }
+    },
+    "required": [
+     "linked"
+    ],
+    "type": "object"
+   },
+   "bank-account-maintenance-result-cardholderCards": {
+    "properties": {
+     "accounts": {
+      "type": "integer"
+     },
+     "created": {
+      "type": "integer"
+     },
+     "directoryUnavailable": {
+      "type": "boolean"
+     },
+     "enabled": {
+      "type": "boolean"
+     },
+     "failed": {
+      "type": "integer"
+     },
+     "linkedEnrolled": {
+      "type": "integer"
+     },
+     "named": {
+      "type": "integer"
+     },
+     "relinked": {
+      "type": "integer"
+     },
+     "routeEnabled": {
+      "type": "boolean"
+     },
+     "skipped": {
+      "additionalProperties": {
+       "type": "integer"
+      },
+      "type": "object"
+     },
+     "suffixesSeen": {
+      "type": "integer"
+     }
+    },
+    "required": [
+     "enabled",
+     "routeEnabled",
+     "accounts",
+     "suffixesSeen",
+     "created",
+     "linkedEnrolled",
+     "named",
+     "relinked",
+     "failed",
+     "skipped",
+     "directoryUnavailable"
+    ],
+    "type": "object"
+   },
+   "bank-account-maintenance-result-junctionLast4": {
+    "properties": {
+     "directoryUnavailable": {
+      "type": "boolean"
+     },
+     "rowsUnresolved": {
+      "type": "integer"
+     },
+     "rowsUpdated": {
+      "type": "integer"
+     }
+    },
+    "required": [
+     "rowsUpdated",
+     "rowsUnresolved",
+     "directoryUnavailable"
+    ],
+    "type": "object"
+   },
+   "bank-account-maintenance-result-minted-value": {
+    "properties": {
+     "cardId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "linkedHere": {
+      "type": "boolean"
+     },
+     "subscriptionId": {
+      "format": "uuid",
+      "type": "string"
+     }
+    },
+    "required": [
+     "cardId",
+     "subscriptionId",
+     "linkedHere"
+    ],
+    "type": "object"
+   },
+   "bank-account-refresh-result": {
+    "properties": {
+     "expiresAt": {
+      "format": "date-time",
+      "type": "string"
+     },
+     "hostedLink": {
+      "type": "string"
+     },
+     "id": {
+      "format": "uuid",
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "hostedLink",
+     "expiresAt"
+    ],
+    "type": "object"
+   },
+   "bank-account-transactions-refresh-result": {
+    "properties": {
+     "durationMs": {
+      "type": "integer"
+     },
+     "id": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "requestedAt": {
+      "format": "date-time",
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "requestedAt",
+     "durationMs"
+    ],
+    "type": "object"
+   },
+   "bank-account-update-params": {
+    "oneOf": [
+     {
+      "$ref": "#/components/schemas/bank-account-cards-update"
+     },
+     {
+      "$ref": "#/components/schemas/bank-account-disconnect"
+     }
+    ]
+   },
+   "bank-account-update-result": {
+    "properties": {
+     "backfill": {
+      "$ref": "#/components/schemas/bank-account-update-result-backfill"
+     },
+     "cardIds": {
+      "items": {
+       "format": "uuid",
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "id": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "state": {
+      "type": "string"
+     },
+     "updatedAt": {
+      "format": "date-time",
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "cardIds",
+     "state",
+     "updatedAt"
+    ],
+    "type": "object"
+   },
+   "bank-account-update-result-backfill": {
+    "properties": {
+     "matchesFound": {
+      "type": "integer"
+     },
+     "transactionsProcessed": {
+      "type": "integer"
+     }
+    },
+    "type": "object"
+   },
+   "bank-feed-card": {
+    "properties": {
+     "enrollmentType": {
+      "enum": [
+       "bank-feed"
+      ],
+      "type": "string"
+     },
+     "id": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "last4digits": {
+      "pattern": "^\\d{4}$",
+      "type": "string"
+     },
+     "network": {
+      "nullable": true,
+      "type": "string"
+     },
+     "subscriptionId": {
+      "format": "uuid",
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "subscriptionId",
+     "last4digits",
+     "network",
+     "enrollmentType"
+    ],
+    "type": "object"
+   },
+   "bank-institution-incident": {
+    "properties": {
+     "endedAt": {
+      "nullable": true,
+      "type": "string"
+     },
+     "startedAt": {
+      "type": "string"
+     },
+     "status": {
+      "nullable": true,
+      "type": "string"
+     },
+     "title": {
+      "type": "string"
+     },
+     "update": {
+      "nullable": true,
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "bank-link": {
+    "properties": {
+     "_links": {
+      "$ref": "#/components/schemas/bank-link-links"
+     },
+     "accountId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "bankAccounts": {
+      "items": {
+       "$ref": "#/components/schemas/bank-link-bank-account"
+      },
+      "type": "array"
+     },
+     "completedAt": {
+      "format": "date-time",
+      "type": "string"
+     },
+     "createdAt": {
+      "format": "date-time",
+      "type": "string"
+     },
+     "filters": {
+      "$ref": "#/components/schemas/bank-link-filters"
+     },
+     "hostedLink": {
+      "nullable": true,
+      "type": "string"
+     },
+     "id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "pattern": "^[a-zA-Z0-9_-]+$",
+      "type": "string"
+     },
+     "lastMintFailure": {
+      "$ref": "#/components/schemas/bank-link-lastMintFailure"
+     },
+     "lastRejection": {
+      "$ref": "#/components/schemas/bank-link-lastRejection"
+     },
+     "linkExpiresAt": {
+      "format": "date-time",
+      "nullable": true,
+      "type": "string"
+     },
+     "provider": {
+      "enum": [
+       "plaid",
+       "mastercard"
+      ],
+      "type": "string"
+     },
+     "state": {
+      "enum": [
+       "pending",
+       "completed",
+       "expired"
+      ],
+      "type": "string"
+     },
+     "subaccountId": {
+      "format": "uuid",
+      "type": "string"
+     }
+    },
+    "required": [
+     "_links",
+     "id",
+     "accountId",
+     "subaccountId",
+     "state",
+     "hostedLink",
+     "linkExpiresAt",
+     "createdAt"
+    ],
+    "type": "object"
+   },
+   "bank-link-bank-account": {
+    "properties": {
+     "cardIds": {
+      "items": {
+       "format": "uuid",
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "cards": {
+      "items": {
+       "$ref": "#/components/schemas/bank-feed-card"
+      },
+      "type": "array"
+     },
+     "id": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "institutionName": {
+      "nullable": true,
+      "type": "string"
+     },
+     "mask": {
+      "nullable": true,
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "noLinkReason": {
+      "enum": [
+       "bulk_card_owns_mask",
+       "mask_ambiguous_accounts",
+       "mask_ambiguous_cards",
+       "card_linked_elsewhere",
+       "card_not_attachable",
+       "no_institution_id",
+       "mask_matches_no_plausible_card"
+      ],
+      "nullable": true,
+      "type": "string"
+     },
+     "type": {
+      "nullable": true,
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "bank-link-consent": {
+    "properties": {
+     "channel": {
+      "enum": [
+       "sdk-unified"
+      ],
+      "type": "string"
+     },
+     "sdkVersion": {
+      "maxLength": 60,
+      "pattern": "^(unified-sdk|legacy-sdk)@(v\\d+\\.\\d+\\.\\d+|preview-[0-9a-f]{7,40}|local)$",
+      "type": "string"
+     },
+     "textHash": {
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "type": "string"
+     },
+     "textVersionId": {
+      "maxLength": 120,
+      "minLength": 1,
+      "pattern": "^[a-z0-9-]+:[A-Za-z0-9:._-]+@v?\\d+$",
+      "type": "string"
+     },
+     "variables": {
+      "additionalProperties": {
+       "maxLength": 500,
+       "type": "string"
+      },
+      "maxProperties": 10,
+      "type": "object"
+     }
+    },
+    "required": [
+     "channel"
+    ],
+    "type": "object"
+   },
+   "bank-link-create-params": {
+    "properties": {
+     "bin6": {
+      "pattern": "^\\d{6}$",
+      "type": "string"
+     },
+     "cardholderKey": {
+      "maxLength": 256,
+      "minLength": 1,
+      "type": "string"
+     },
+     "consent": {
+      "$ref": "#/components/schemas/bank-link-consent"
+     },
+     "countryCode": {
+      "pattern": "^[A-Z]{3}$",
+      "type": "string"
+     },
+     "filters": {
+      "$ref": "#/components/schemas/bank-link-create-params-filters"
+     },
+     "id": {
+      "maxLength": 256,
+      "minLength": 1,
+      "pattern": "^[a-zA-Z0-9_-]+$",
+      "type": "string"
+     },
+     "language": {
+      "maxLength": 35,
+      "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{1,8}){0,3}$",
+      "type": "string"
+     },
+     "persona": {
+      "enum": [
+       "admin",
+       "cardholder"
+      ],
+      "type": "string"
+     },
+     "provider": {
+      "enum": [
+       "plaid",
+       "mastercard"
+      ],
+      "type": "string"
+     },
+     "subaccountId": {
+      "format": "uuid",
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "subaccountId"
+    ],
+    "type": "object"
+   },
+   "bank-link-create-params-filters": {
+    "properties": {
+     "accountTypes": {
+      "items": {
+       "enum": [
+        "checking",
+        "savings",
+        "credit"
+       ],
+       "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+     },
+     "linkCustomizationName": {
+      "maxLength": 100,
+      "minLength": 1,
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "bank-link-filters": {
+    "properties": {
+     "accountTypes": {
+      "items": {
+       "enum": [
+        "checking",
+        "savings",
+        "credit"
+       ],
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "linkCustomizationName": {
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "bank-link-lastMintFailure": {
+    "nullable": true,
+    "properties": {
+     "at": {
+      "format": "date-time",
+      "type": "string"
+     },
+     "failedAccountCount": {
+      "type": "integer"
+     },
+     "kind": {
+      "enum": [
+       "permanent",
+       "transient"
+      ],
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "bank-link-lastRejection": {
+    "nullable": true,
+    "properties": {
+     "at": {
+      "format": "date-time",
+      "type": "string"
+     },
+     "institutionName": {
+      "nullable": true,
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "bank-link-links": {
+    "properties": {
+     "bankAccounts": {
+      "items": {
+       "$ref": "#/components/schemas/link"
+      },
+      "type": "array"
+     },
+     "self": {
+      "$ref": "#/components/schemas/link"
+     }
+    },
+    "required": [
+     "self"
+    ],
+    "type": "object"
+   },
+   "bank-link-list": {
+    "properties": {
+     "items": {
+      "items": {
+       "$ref": "#/components/schemas/bank-link"
+      },
+      "type": "array"
+     },
+     "pagination": {
+      "$ref": "#/components/schemas/cursor-pagination"
+     }
+    },
+    "required": [
+     "items",
+     "pagination"
+    ],
+    "type": "object"
+   },
+   "bank-link-sync-params": {
+    "properties": {
+     "force": {
+      "default": false,
+      "type": "boolean"
+     },
+     "webhooks": {
+      "items": {
+       "enum": [
+        "banktransaction.created",
+        "transaction.match.created"
+       ],
+       "type": "string"
+      },
+      "type": "array"
+     }
+    },
+    "type": "object"
+   },
+   "bank-link-sync-result": {
+    "properties": {
+     "message": {
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "bank-link-update-params": {
+    "properties": {
+     "consent": {
+      "$ref": "#/components/schemas/bank-link-consent"
+     },
+     "state": {
+      "enum": [
+       "completed"
+      ],
+      "type": "string"
+     }
+    },
+    "required": [
+     "state"
+    ],
+    "type": "object"
+   },
+   "bank-subscription": {
+    "properties": {
+     "accountId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "authErrorFirstSeenAt": {
+      "format": "date-time",
+      "nullable": true,
+      "type": "string"
+     },
+     "connectionId": {
+      "type": "string"
+     },
+     "createdAt": {
+      "format": "date-time",
+      "type": "string"
+     },
+     "id": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "institutionHealth": {
+      "$ref": "#/components/schemas/bank-subscription-institutionHealth"
+     },
+     "institutionLastCheckedAt": {
+      "format": "date-time",
+      "nullable": true,
+      "type": "string"
+     },
+     "institutionLastFailedAt": {
+      "format": "date-time",
+      "nullable": true,
+      "type": "string"
+     },
+     "institutionName": {
+      "type": "string"
+     },
+     "lastSyncedAt": {
+      "format": "date-time",
+      "nullable": true,
+      "type": "string"
+     },
+     "provider": {
+      "enum": [
+       "PLAID",
+       "MASTERCARD_US",
+       "MASTERCARD_EU"
+      ],
+      "type": "string"
+     },
+     "state": {
+      "enum": [
+       "active",
+       "error",
+       "auth_required",
+       "disconnected"
+      ],
+      "type": "string"
+     },
+     "subaccountId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "syncCursor": {
+      "nullable": true,
+      "type": "string"
+     },
+     "updatedAt": {
+      "format": "date-time",
+      "type": "string"
+     },
+     "webhook": {
+      "$ref": "#/components/schemas/bank-subscription-webhook"
+     }
+    },
+    "required": [
+     "id",
+     "accountId",
+     "subaccountId",
+     "connectionId",
+     "provider",
+     "institutionName",
+     "state",
+     "webhook",
+     "syncCursor",
+     "createdAt",
+     "updatedAt"
+    ],
+    "type": "object"
+   },
+   "bank-subscription-institutionHealth": {
+    "nullable": true,
+    "properties": {
+     "errorInstitution": {
+      "type": "number"
+     },
+     "errorProvider": {
+      "type": "number"
+     },
+     "incidents": {
+      "items": {
+       "$ref": "#/components/schemas/bank-institution-incident"
+      },
+      "type": "array"
+     },
+     "observedAt": {
+      "format": "date-time",
+      "type": "string"
+     },
+     "refreshInterval": {
+      "enum": [
+       "NORMAL",
+       "DELAYED",
+       "STOPPED",
+       null
+      ],
+      "nullable": true,
+      "type": "string"
+     },
+     "success": {
+      "type": "number"
+     }
+    },
+    "type": "object"
+   },
+   "bank-subscription-list": {
+    "properties": {
+     "items": {
+      "items": {
+       "$ref": "#/components/schemas/bank-subscription"
+      },
+      "type": "array"
+     },
+     "pagination": {
+      "$ref": "#/components/schemas/cursor-pagination"
+     }
+    },
+    "required": [
+     "items",
+     "pagination"
+    ],
+    "type": "object"
+   },
+   "bank-subscription-webhook": {
+    "properties": {
+     "status": {
+      "enum": [
+       "pending",
+       "confirmed",
+       "none"
+      ],
+      "type": "string"
+     },
+     "url": {
+      "nullable": true,
+      "type": "string"
+     }
+    },
+    "required": [
+     "url",
+     "status"
+    ],
+    "type": "object"
+   },
+   "bank-transaction": {
+    "properties": {
+     "_links": {
+      "$ref": "#/components/schemas/bank-transaction-links"
+     },
+     "accountId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "amount": {
+      "type": "number"
+     },
+     "bankAccountId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "cardId": {
+      "format": "uuid",
+      "nullable": true,
+      "type": "string"
+     },
+     "category": {
+      "items": {
+       "type": "string"
+      },
+      "nullable": true,
+      "type": "array"
+     },
+     "createdAt": {
+      "format": "date-time",
+      "type": "string"
+     },
+     "currency": {
+      "maxLength": 3,
+      "minLength": 3,
+      "type": "string"
+     },
+     "date": {
+      "format": "date",
+      "type": "string"
+     },
+     "description": {
+      "nullable": true,
+      "type": "string"
+     },
+     "id": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "matchId": {
+      "format": "uuid",
+      "nullable": true,
+      "type": "string"
+     },
+     "merchantName": {
+      "nullable": true,
+      "type": "string"
+     },
+     "settlement": {
+      "$ref": "#/components/schemas/bank-transaction-settlement"
+     },
+     "source": {
+      "enum": [
+       "PLAID",
+       "UPLOAD",
+       "MASTERCARD_US",
+       "MASTERCARD_EU"
+      ],
+      "type": "string"
+     },
+     "status": {
+      "enum": [
+       "posted",
+       "matched",
+       "settled",
+       "early_cleared",
+       "superseded"
+      ],
+      "type": "string"
+     },
+     "subaccountId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "transactionType": {
+      "enum": [
+       "debit",
+       "credit"
+      ],
+      "type": "string"
+     }
+    },
+    "required": [
+     "_links",
+     "id",
+     "accountId",
+     "subaccountId",
+     "bankAccountId",
+     "cardId",
+     "matchId",
+     "date",
+     "amount",
+     "currency",
+     "description",
+     "merchantName",
+     "category",
+     "transactionType",
+     "source",
+     "status",
+     "settlement",
+     "createdAt"
+    ],
+    "type": "object"
+   },
+   "bank-transaction-links": {
+    "properties": {
+     "bankAccount": {
+      "$ref": "#/components/schemas/link"
+     },
+     "card": {
+      "$ref": "#/components/schemas/link"
+     },
+     "match": {
+      "$ref": "#/components/schemas/link"
+     },
+     "self": {
+      "$ref": "#/components/schemas/link"
+     }
+    },
+    "required": [
+     "self",
+     "bankAccount"
+    ],
+    "type": "object"
+   },
+   "bank-transaction-list": {
+    "properties": {
+     "items": {
+      "items": {
+       "$ref": "#/components/schemas/bank-transaction"
+      },
+      "type": "array"
+     },
+     "pagination": {
+      "$ref": "#/components/schemas/cursor-pagination"
+     }
+    },
+    "required": [
+     "items",
+     "pagination"
+    ],
+    "type": "object"
+   },
+   "bank-transaction-settlement": {
+    "nullable": true,
+    "properties": {
+     "emissionType": {
+      "enum": [
+       "early_clearing",
+       "bank_only"
+      ],
+      "type": "string"
+     },
+     "emittedAt": {
+      "format": "date-time",
+      "nullable": true,
+      "type": "string"
+     },
+     "state": {
+      "enum": [
+       "settled",
+       "early_cleared",
+       "superseded"
+      ],
+      "type": "string"
+     },
+     "supersededAt": {
+      "format": "date-time",
+      "nullable": true,
+      "type": "string"
+     }
+    },
+    "required": [
+     "state",
+     "emissionType",
+     "emittedAt",
+     "supersededAt"
+    ],
+    "type": "object"
+   },
+   "bank-transaction-webhook-failure": {
+    "properties": {
+     "error": {
+      "type": "string"
+     },
+     "id": {
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "bank-transaction-webhooks-params": {
+    "properties": {
+     "dispatchUnmatched": {
+      "default": false,
+      "type": "boolean"
+     },
+     "forceRematch": {
+      "default": false,
+      "type": "boolean"
+     },
+     "ids": {
+      "items": {
+       "format": "uuid",
+       "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+     },
+     "webhooks": {
+      "items": {
+       "enum": [
+        "banktransaction.created",
+        "transaction.match.created"
+       ],
+       "type": "string"
+      },
+      "type": "array"
+     }
+    },
+    "required": [
+     "ids"
+    ],
+    "type": "object"
+   },
+   "bank-transaction-webhooks-result": {
+    "properties": {
+     "dispatchError": {
+      "type": "string"
+     },
+     "dispatched": {
+      "type": "integer"
+     },
+     "emitted": {
+      "type": "integer"
+     },
+     "failed": {
+      "items": {
+       "$ref": "#/components/schemas/bank-transaction-webhook-failure"
+      },
+      "type": "array"
+     },
+     "matched": {
+      "type": "integer"
+     },
+     "message": {
+      "type": "string"
+     },
+     "resent": {
+      "type": "integer"
+     },
+     "skipped": {
+      "type": "integer"
+     }
+    },
+    "required": [
+     "message",
+     "emitted",
+     "resent",
+     "matched",
+     "skipped",
+     "failed"
+    ],
+    "type": "object"
+   },
+   "banking-error": {
+    "properties": {
+     "code": {
+      "example": "SUBACCOUNT_NOT_FOUND",
+      "type": "string"
+     },
+     "error": {
+      "example": "Not Found",
+      "type": "string"
+     },
+     "errors": {
+      "example": [
+       {
+        "code": "invalid_type",
+        "message": "Invalid input: expected string, received undefined",
+        "path": [
+         "id"
+        ]
+       }
+      ],
+      "items": {
+       "type": "object"
+      },
+      "type": "array"
+     },
+     "message": {
+      "example": "Subaccount not found for this account",
+      "type": "string"
+     },
+     "reason": {
+      "example": "network-not-allowed",
+      "type": "string"
+     },
+     "statusCode": {
+      "example": 404,
+      "type": "integer"
+     }
+    },
+    "required": [
+     "statusCode",
+     "message"
+    ],
+    "type": "object"
+   },
+   "cursor-pagination": {
+    "properties": {
+     "cursor": {
+      "type": "string"
+     },
+     "hasMore": {
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "hasMore"
+    ],
+    "type": "object"
+   },
+   "link": {
+    "properties": {
+     "deprecation": {
+      "type": "string"
+     },
+     "href": {
+      "type": "string"
+     },
+     "hreflang": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "profile": {
+      "type": "string"
+     },
+     "templated": {
+      "type": "boolean"
+     },
+     "title": {
+      "type": "string"
+     },
+     "type": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "href"
+    ],
+    "type": "object"
+   },
+   "problem": {
+    "properties": {
+     "detail": {
+      "type": "string"
+     },
+     "instance": {
+      "type": "string"
+     },
+     "title": {
+      "type": "string"
+     },
+     "type": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "detail",
+     "title"
+    ],
+    "type": "object"
+   },
+   "transaction-match": {
+    "properties": {
+     "_links": {
+      "$ref": "#/components/schemas/transaction-match-links"
+     },
+     "accountId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "bankTransaction": {
+      "$ref": "#/components/schemas/transaction-match-bankTransaction"
+     },
+     "bankTransactionId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "cardTransaction": {
+      "$ref": "#/components/schemas/transaction-match-cardTransaction"
+     },
+     "cardTransactionId": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "confidence": {
+      "enum": [
+       "HIGH",
+       "MEDIUM",
+       "LOW"
+      ],
+      "type": "string"
+     },
+     "createdAt": {
+      "format": "date-time",
+      "type": "string"
+     },
+     "id": {
+      "format": "uuid",
+      "type": "string"
+     },
+     "reasons": {
+      "items": {
+       "$ref": "#/components/schemas/transaction-match-reason"
+      },
+      "type": "array"
+     },
+     "score": {
+      "maximum": 1,
+      "minimum": 0,
+      "type": "number"
+     },
+     "subaccountId": {
+      "format": "uuid",
+      "type": "string"
+     }
+    },
+    "required": [
+     "_links",
+     "id",
+     "accountId",
+     "subaccountId",
+     "cardTransactionId",
+     "bankTransactionId",
+     "confidence",
+     "score",
+     "cardTransaction",
+     "bankTransaction",
+     "reasons",
+     "createdAt"
+    ],
+    "type": "object"
+   },
+   "transaction-match-bankTransaction": {
+    "properties": {
+     "amount": {
+      "type": "number"
+     },
+     "currency": {
+      "type": "string"
+     },
+     "date": {
+      "type": "string"
+     },
+     "description": {
+      "type": "string"
+     },
+     "merchantName": {
+      "nullable": true,
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "transaction-match-cardTransaction": {
+    "properties": {
+     "amount": {
+      "type": "number"
+     },
+     "cardId": {
+      "format": "uuid",
+      "nullable": true,
+      "type": "string"
+     },
+     "currency": {
+      "type": "string"
+     },
+     "date": {
+      "type": "string"
+     },
+     "descriptor": {
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "transaction-match-links": {
+    "properties": {
+     "bankTransaction": {
+      "$ref": "#/components/schemas/link"
+     },
+     "card": {
+      "$ref": "#/components/schemas/link"
+     },
+     "cardTransaction": {
+      "$ref": "#/components/schemas/link"
+     },
+     "self": {
+      "$ref": "#/components/schemas/link"
+     }
+    },
+    "required": [
+     "self",
+     "cardTransaction",
+     "bankTransaction"
+    ],
+    "type": "object"
+   },
+   "transaction-match-list": {
+    "properties": {
+     "items": {
+      "items": {
+       "$ref": "#/components/schemas/transaction-match"
+      },
+      "type": "array"
+     },
+     "pagination": {
+      "$ref": "#/components/schemas/cursor-pagination"
+     }
+    },
+    "required": [
+     "items",
+     "pagination"
+    ],
+    "type": "object"
+   },
+   "transaction-match-reason": {
+    "properties": {
+     "bankValue": {
+      "nullable": true,
+      "type": "string"
+     },
+     "cardValue": {
+      "nullable": true,
+      "type": "string"
+     },
+     "diff": {
+      "type": "number"
+     },
+     "message": {
+      "type": "string"
+     },
+     "score": {
+      "type": "number"
+     },
+     "type": {
+      "enum": [
+       "Amount",
+       "Date",
+       "Merchant",
+       "ReferenceId",
+       "PreAuth"
+      ],
+      "type": "string"
+     }
+    },
+    "type": "object"
+   }
+  }
+ },
+ "info": {
+  "title": "Astrada Banking API",
+  "version": "2024-02-28"
+ },
+ "openapi": "3.0.3",
+ "paths": {
+  "/bank-accounts": {
+   "get": {
+    "operationId": "ListBankAccounts",
+    "parameters": [
+     {
+      "$ref": "#/components/parameters/subaccount-id"
+     },
+     {
+      "$ref": "#/components/parameters/bank-account-state"
+     },
+     {
+      "$ref": "#/components/parameters/card-id-2"
+     },
+     {
+      "$ref": "#/components/parameters/banking-limit"
+     },
+     {
+      "$ref": "#/components/parameters/cursor"
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example List Bank Accounts Response": {
+          "value": {
+           "items": [
+            {
+             "_links": {
+              "bankLink": {
+               "href": "/bank-links/enrollment_792dcb7d"
+              },
+              "self": {
+               "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+              },
+              "transactions": {
+               "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11?bankAccountId=3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+              }
+             },
+             "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+             "bankLinkId": "enrollment_792dcb7d",
+             "cardIds": [
+              "5dec2c49-0aa5-4683-a317-427eb5d115f3"
+             ],
+             "cards": [],
+             "createdAt": "2025-10-03T10:55:42.000Z",
+             "currency": "USD",
+             "externalId": "plaid_acc_792dcb7d",
+             "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+             "institutionName": "Chase",
+             "lastSyncedAt": "2025-10-03T11:12:07.000Z",
+             "mask": "1234",
+             "name": "Checking",
+             "state": "active",
+             "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+             "subscriptionState": "active",
+             "type": "checking",
+             "updatedAt": "2025-10-03T10:55:42.000Z"
+            },
+            {
+             "_links": {
+              "bankLink": {
+               "href": "/bank-links/enrollment_792dcb7d"
+              },
+              "self": {
+               "href": "/bank-accounts/9b7e4d2f-8a3c-1e6f-d5b0-2c4a6e8f0d1b"
+              },
+              "transactions": {
+               "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11?bankAccountId=9b7e4d2f-8a3c-1e6f-d5b0-2c4a6e8f0d1b"
+              }
+             },
+             "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+             "bankLinkId": "enrollment_792dcb7d",
+             "cardIds": [],
+             "cards": [],
+             "createdAt": "2025-10-03T10:55:42.000Z",
+             "currency": "USD",
+             "externalId": "plaid_acc_792dcb7e",
+             "id": "9b7e4d2f-8a3c-1e6f-d5b0-2c4a6e8f0d1b",
+             "institutionName": "Chase",
+             "lastSyncedAt": "2025-10-03T11:12:07.000Z",
+             "mask": "5678",
+             "name": "Savings",
+             "state": "active",
+             "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+             "subscriptionState": "active",
+             "type": "checking",
+             "updatedAt": "2025-10-03T10:55:42.000Z"
+            }
+           ],
+           "pagination": {
+            "hasMore": false
+           }
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-account-list"
+        }
+       }
+      },
+      "links": {
+       "GetFirstBankAccount": {
+        "operationId": "GetBankAccount",
+        "parameters": {
+         "bankAccountId": "$response.body#/items/0/id"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_read_forbidden"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   }
+  },
+  "/bank-accounts/link-enrolled-cards": {
+   "post": {
+    "operationId": "LinkEnrolledCards",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "example": {
+        "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5"
+       },
+       "schema": {
+        "$ref": "#/components/schemas/bank-account-link-cards-params"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Backfill Response": {
+          "value": {
+           "linked": {
+            "059d5e6a-cfb1-46e6-ab84-6586582b6b58": [
+             "da28e1b8-c7a4-4575-b72f-3a88d6fe34df"
+            ]
+           }
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-account-link-cards-result"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_write_forbidden"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   }
+  },
+  "/bank-accounts/maintenance": {
+   "post": {
+    "operationId": "RunBankAccountMaintenance",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "examples": {
+        "Mask pass only": {
+         "value": {
+          "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5"
+         }
+        },
+        "Mask pass, then mint and cardholder cards": {
+         "value": {
+          "createCardholderCards": true,
+          "mint": true,
+          "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5"
+         }
+        }
+       },
+       "schema": {
+        "$ref": "#/components/schemas/bank-account-maintenance-params"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Mask pass only": {
+          "value": {
+           "linked": {
+            "059d5e6a-cfb1-46e6-ab84-6586582b6b58": [
+             "da28e1b8-c7a4-4575-b72f-3a88d6fe34df"
+            ]
+           }
+          }
+         },
+         "With mint and cardholder cards": {
+          "value": {
+           "cardholderCards": {
+            "accounts": 1,
+            "created": 2,
+            "directoryUnavailable": false,
+            "enabled": true,
+            "failed": 0,
+            "linkedEnrolled": 0,
+            "named": 3,
+            "relinked": 0,
+            "routeEnabled": false,
+            "skipped": {},
+            "suffixesSeen": 3
+           },
+           "linked": {},
+           "minted": {
+            "3a1f0c2e-9b4d-4e7a-8c6f-1d2e3f4a5b6c": {
+             "cardId": "7c9e6679-7425-40de-944b-e07fc1f90ae7",
+             "linkedHere": true,
+             "subscriptionId": "2f1a4b3c-5d6e-4f70-8a9b-0c1d2e3f4a5b"
+            }
+           },
+           "skipped": {
+            "8b2d4f6a-1c3e-4a5b-9d7f-2e4a6c8b0d1f": "already_materialized"
+           }
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-account-maintenance-result"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_staff_only_forbidden"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   }
+  },
+  "/bank-accounts/{bankAccountId}": {
+   "delete": {
+    "operationId": "DeleteBankAccount",
+    "responses": {
+     "204": {},
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_staff_only_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   },
+   "get": {
+    "operationId": "GetBankAccount",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Get Bank Account Response": {
+          "$ref": "#/components/examples/bank-account"
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-account"
+        }
+       }
+      }
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_read_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   },
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/bank-account-id"
+    }
+   ],
+   "patch": {
+    "operationId": "UpdateBankAccount",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "examples": {
+        "DisconnectAccountExample": {
+         "value": {
+          "reason": "customer_requested",
+          "state": "disconnected"
+         }
+        },
+        "DisconnectOneCardExample": {
+         "value": {
+          "cardId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+          "reason": "subscription_deactivated",
+          "state": "disconnected"
+         }
+        },
+        "LinkCardExample": {
+         "value": {
+          "cardIds": [
+           "5dec2c49-0aa5-4683-a317-427eb5d115f3"
+          ]
+         }
+        },
+        "LinkCardWithBackfillExample": {
+         "value": {
+          "backfill": {
+           "endDate": "2025-10-01",
+           "startDate": "2025-09-01"
+          },
+          "cardIds": [
+           "5dec2c49-0aa5-4683-a317-427eb5d115f3"
+          ]
+         }
+        },
+        "LinkMultipleCardsExample": {
+         "value": {
+          "cardIds": [
+           "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+           "8abc3d12-1bb6-4912-b421-6e8f2a7c9d0e"
+          ]
+         }
+        },
+        "UnlinkAllCardsExample": {
+         "value": {
+          "cardIds": []
+         }
+        }
+       },
+       "schema": {
+        "$ref": "#/components/schemas/bank-account-update-params"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Update Bank Account Response": {
+          "value": {
+           "cardIds": [
+            "5dec2c49-0aa5-4683-a317-427eb5d115f3"
+           ],
+           "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+           "state": "active",
+           "updatedAt": "2025-10-03T11:00:00.000Z"
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-account-update-result"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_write_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "409": {
+      "$ref": "#/components/responses/banking_conflict"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   }
+  },
+  "/bank-accounts/{bankAccountId}/backfill": {
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/bank-account-id"
+    }
+   ],
+   "post": {
+    "operationId": "BackfillBankAccount",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "examples": {
+        "BackfillDateRangeExample": {
+         "value": {
+          "endDate": "2026-06-27",
+          "startDate": "2026-06-13"
+         }
+        },
+        "BackfillDefaultWindowExample": {
+         "value": {}
+        },
+        "BackfillLoadHistoricExample": {
+         "value": {
+          "endDate": "2026-07-30",
+          "loadHistoric": true,
+          "startDate": "2025-08-01"
+         }
+        }
+       },
+       "schema": {
+        "$ref": "#/components/schemas/bank-account-backfill-params"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Backfill Bank Account Response": {
+          "value": {
+           "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+           "matchesFound": 27,
+           "transactionsProcessed": 118
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-account-backfill-result"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_staff_only_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "409": {
+      "$ref": "#/components/responses/banking_conflict"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   }
+  },
+  "/bank-accounts/{bankAccountId}/refresh": {
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/bank-account-id"
+    }
+   ],
+   "post": {
+    "operationId": "RefreshBankAccount",
+    "responses": {
+     "201": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Refresh Bank Account Response": {
+          "value": {
+           "expiresAt": "2025-10-03T14:55:42.000Z",
+           "hostedLink": "https://hosted.plaid.com/link/refresh123",
+           "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-account-refresh-result"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_write_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   }
+  },
+  "/bank-accounts/{bankAccountId}/transactions/refresh": {
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/bank-account-id"
+    }
+   ],
+   "post": {
+    "operationId": "RefreshBankAccountTransactions",
+    "responses": {
+     "202": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Refresh Bank Account Transactions Response": {
+          "value": {
+           "durationMs": 4210,
+           "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+           "requestedAt": "2026-10-05T00:59:10Z"
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-account-transactions-refresh-result"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_staff_only_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     },
+     "502": {
+      "$ref": "#/components/responses/banking_bad_gateway"
+     }
+    }
+   }
+  },
+  "/bank-links": {
+   "get": {
+    "operationId": "ListBankLinks",
+    "parameters": [
+     {
+      "$ref": "#/components/parameters/subaccount-id"
+     },
+     {
+      "$ref": "#/components/parameters/bank-link-state"
+     },
+     {
+      "$ref": "#/components/parameters/banking-limit"
+     },
+     {
+      "$ref": "#/components/parameters/cursor"
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example List Bank Links Response": {
+          "value": {
+           "items": [
+            {
+             "_links": {
+              "bankAccounts": [
+               {
+                "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+               }
+              ],
+              "self": {
+               "href": "/bank-links/enrollment_792dcb7d"
+              }
+             },
+             "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+             "bankAccounts": [
+              {
+               "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+               "name": "Checking"
+              }
+             ],
+             "completedAt": "2025-10-03T10:55:42.000Z",
+             "createdAt": "2025-10-03T10:25:27.069Z",
+             "hostedLink": null,
+             "id": "enrollment_792dcb7d",
+             "linkExpiresAt": null,
+             "provider": "plaid",
+             "state": "completed",
+             "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11"
+            },
+            {
+             "_links": {
+              "self": {
+               "href": "/bank-links/enrollment_a1b2c3d4"
+              }
+             },
+             "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+             "createdAt": "2025-10-04T10:25:27.069Z",
+             "hostedLink": "https://hosted.plaid.com/link/abc123",
+             "id": "enrollment_a1b2c3d4",
+             "linkExpiresAt": "2025-10-04T14:25:27.000Z",
+             "provider": "plaid",
+             "state": "pending",
+             "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11"
+            }
+           ],
+           "pagination": {
+            "cursor": "ZXhhbXBsZQ==",
+            "hasMore": false
+           }
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-link-list"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_read_forbidden"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   },
+   "post": {
+    "operationId": "CreateBankLink",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "examples": {
+        "AmexCardEnrollmentExample": {
+         "value": {
+          "bin6": "371449",
+          "filters": {
+           "accountTypes": [
+            "credit"
+           ],
+           "linkCustomizationName": "amex_only"
+          },
+          "id": "enrollment_amex_7f2c",
+          "subaccountId": "50cced63-ee4e-4ff7-a469-aaa989f220f2"
+         }
+        },
+        "BankLinkRequestExample": {
+         "value": {
+          "id": "enrollment_abc123",
+          "subaccountId": "50cced63-ee4e-4ff7-a469-aaa989f220f2"
+         }
+        },
+        "CardholderBankLinkExample": {
+         "value": {
+          "bin6": "371449",
+          "cardholderKey": "ch_7f3c9a2e5b814d06a1c8e2f4b9d7a3c5",
+          "filters": {
+           "accountTypes": [
+            "credit"
+           ],
+           "linkCustomizationName": "amex_only"
+          },
+          "id": "enrollment_cardholder_4e1a",
+          "persona": "cardholder",
+          "subaccountId": "50cced63-ee4e-4ff7-a469-aaa989f220f2"
+         }
+        }
+       },
+       "schema": {
+        "$ref": "#/components/schemas/bank-link-create-params"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Create Bank Link Response": {
+          "value": {
+           "_links": {
+            "self": {
+             "href": "/bank-links/enrollment_abc123"
+            }
+           },
+           "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+           "createdAt": "2025-10-03T10:25:27.069Z",
+           "hostedLink": "https://hosted.plaid.com/link/abc123",
+           "id": "enrollment_abc123",
+           "linkExpiresAt": "2025-10-03T14:25:27.000Z",
+           "provider": "plaid",
+           "state": "pending",
+           "subaccountId": "50cced63-ee4e-4ff7-a469-aaa989f220f2"
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-link"
+        }
+       }
+      },
+      "links": {
+       "CompleteBankLink": {
+        "operationId": "UpdateBankLink",
+        "parameters": {
+         "bankLinkId": "$response.body#/id"
+        }
+       },
+       "GetBankLink": {
+        "operationId": "GetBankLink",
+        "parameters": {
+         "bankLinkId": "$response.body#/id"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_link_create_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "409": {
+      "$ref": "#/components/responses/banking_conflict"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     },
+     "503": {
+      "$ref": "#/components/responses/banking_owner_not_configured"
+     }
+    }
+   }
+  },
+  "/bank-links/{bankLinkId}": {
+   "delete": {
+    "operationId": "DeleteBankLink",
+    "responses": {
+     "204": {},
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_staff_only_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "409": {
+      "$ref": "#/components/responses/banking_conflict"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   },
+   "get": {
+    "operationId": "GetBankLink",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Get Bank Link Response": {
+          "$ref": "#/components/examples/bank-link"
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-link"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_read_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   },
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/bank-link-id"
+    }
+   ],
+   "patch": {
+    "operationId": "UpdateBankLink",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "examples": {
+        "BankLinkRequestExample": {
+         "value": {
+          "state": "completed"
+         }
+        }
+       },
+       "schema": {
+        "$ref": "#/components/schemas/bank-link-update-params"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Complete Bank Link Response": {
+          "$ref": "#/components/examples/bank-link"
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-link"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_write_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "409": {
+      "$ref": "#/components/responses/banking_conflict"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   }
+  },
+  "/bank-links/{bankLinkId}/sync": {
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/bank-link-id"
+    }
+   ],
+   "post": {
+    "operationId": "SyncBankLink",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "examples": {
+        "SyncWithWebhooksExample": {
+         "value": {
+          "force": false,
+          "webhooks": [
+           "banktransaction.created"
+          ]
+         }
+        }
+       },
+       "schema": {
+        "$ref": "#/components/schemas/bank-link-sync-params"
+       }
+      }
+     },
+     "required": false
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Sync Response": {
+          "value": {
+           "message": "Transactions synced successfully"
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-link-sync-result"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_staff_only_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "409": {
+      "$ref": "#/components/responses/banking_conflict"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     },
+     "503": {
+      "$ref": "#/components/responses/banking_service_unavailable"
+     }
+    }
+   }
+  },
+  "/bank-subscriptions": {
+   "get": {
+    "operationId": "ListBankSubscriptions",
+    "parameters": [
+     {
+      "$ref": "#/components/parameters/subaccount-id"
+     },
+     {
+      "in": "query",
+      "name": "state",
+      "required": false,
+      "schema": {
+       "enum": [
+        "active",
+        "error",
+        "auth_required",
+        "disconnected"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "in": "query",
+      "name": "connectionId",
+      "required": false,
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "$ref": "#/components/parameters/banking-limit"
+     },
+     {
+      "$ref": "#/components/parameters/cursor"
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example List Bank Subscriptions Response": {
+          "value": {
+           "items": [
+            {
+             "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+             "connectionId": "conn_abc123def456",
+             "createdAt": "2025-10-03T10:55:42.000Z",
+             "id": "e4b7c9a2-1d3f-4e8a-9c6b-5f2d7a0e8b1c",
+             "institutionName": "Chase",
+             "provider": "PLAID",
+             "state": "active",
+             "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+             "syncCursor": null,
+             "updatedAt": "2025-10-03T10:55:42.000Z",
+             "webhook": {
+              "status": "confirmed",
+              "url": "https://example.com/webhooks/banking"
+             }
+            }
+           ],
+           "pagination": {
+            "hasMore": false
+           }
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-subscription-list"
+        }
+       }
+      },
+      "links": {
+       "GetFirstBankSubscription": {
+        "operationId": "GetBankSubscription",
+        "parameters": {
+         "bankSubscriptionId": "$response.body#/items/0/id"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_staff_only_forbidden"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   }
+  },
+  "/bank-subscriptions/by-connection/{connectionId}": {
+   "get": {
+    "operationId": "GetBankSubscriptionByConnection",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Get Bank Subscription By Connection Response": {
+          "$ref": "#/components/examples/bank-subscription"
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-subscription"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_staff_only_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   },
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/connection-id"
+    }
+   ]
+  },
+  "/bank-subscriptions/{bankSubscriptionId}": {
+   "get": {
+    "operationId": "GetBankSubscription",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Get Bank Subscription Response": {
+          "$ref": "#/components/examples/bank-subscription"
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-subscription"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_staff_only_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   },
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/bank-subscription-id"
+    }
+   ]
+  },
+  "/bank-transactions/{subaccountId}": {
+   "get": {
+    "operationId": "ListBankTransactions",
+    "parameters": [
+     {
+      "$ref": "#/components/parameters/bank-account-id-2"
+     },
+     {
+      "$ref": "#/components/parameters/card-id-2"
+     },
+     {
+      "$ref": "#/components/parameters/start-date"
+     },
+     {
+      "$ref": "#/components/parameters/end-date"
+     },
+     {
+      "$ref": "#/components/parameters/min-amount"
+     },
+     {
+      "$ref": "#/components/parameters/max-amount"
+     },
+     {
+      "$ref": "#/components/parameters/transaction-type"
+     },
+     {
+      "$ref": "#/components/parameters/matched"
+     },
+     {
+      "in": "query",
+      "name": "source",
+      "required": false,
+      "schema": {
+       "enum": [
+        "PLAID",
+        "UPLOAD",
+        "MASTERCARD_US",
+        "MASTERCARD_EU"
+       ],
+       "type": "string"
+      }
+     },
+     {
+      "$ref": "#/components/parameters/banking-limit"
+     },
+     {
+      "$ref": "#/components/parameters/cursor"
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example List Bank Transactions Response": {
+          "value": {
+           "items": [
+            {
+             "_links": {
+              "bankAccount": {
+               "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+              },
+              "card": {
+               "href": "/cards/5dec2c49-0aa5-4683-a317-427eb5d115f3"
+              },
+              "match": {
+               "href": "/transaction-matches/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e"
+              },
+              "self": {
+               "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c"
+              }
+             },
+             "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+             "amount": 42.5,
+             "bankAccountId": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+             "cardId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+             "category": [
+              "Travel"
+             ],
+             "createdAt": "2025-10-15T14:30:00.000Z",
+             "currency": "USD",
+             "date": "2025-10-15",
+             "description": "UBER TRIP",
+             "id": "7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c",
+             "matchId": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+             "merchantName": "Uber",
+             "settlement": null,
+             "source": "PLAID",
+             "status": "matched",
+             "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+             "transactionType": "debit"
+            },
+            {
+             "_links": {
+              "bankAccount": {
+               "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+              },
+              "self": {
+               "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/2e5f8a1b-4c7d-3e9f-b0a2-8d6c4f1e7b3a"
+              }
+             },
+             "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+             "amount": 156.23,
+             "bankAccountId": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+             "cardId": null,
+             "category": [
+              "Shopping"
+             ],
+             "createdAt": "2025-10-14T09:15:00.000Z",
+             "currency": "USD",
+             "date": "2025-10-14",
+             "description": "AMAZON MARKETPLACE",
+             "id": "2e5f8a1b-4c7d-3e9f-b0a2-8d6c4f1e7b3a",
+             "matchId": null,
+             "merchantName": "Amazon",
+             "settlement": null,
+             "source": "PLAID",
+             "status": "posted",
+             "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+             "transactionType": "debit"
+            }
+           ],
+           "pagination": {
+            "cursor": "ZXhhbXBsZQ==",
+            "hasMore": true
+           }
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-transaction-list"
+        }
+       }
+      },
+      "links": {
+       "GetFirstBankTransaction": {
+        "operationId": "GetBankTransaction",
+        "parameters": {
+         "transactionId": "$response.body#/items/0/id"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_read_forbidden"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   },
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/subaccount-id-2"
+    }
+   ]
+  },
+  "/bank-transactions/{subaccountId}/webhooks": {
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/subaccount-id-2"
+    }
+   ],
+   "post": {
+    "operationId": "TriggerBankTransactionWebhooks",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "examples": {
+        "RematchAndDispatchExample": {
+         "value": {
+          "dispatchUnmatched": true,
+          "forceRematch": true,
+          "ids": [
+           "7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c"
+          ],
+          "webhooks": [
+           "transaction.match.created"
+          ]
+         }
+        },
+        "TriggerWebhooksExample": {
+         "value": {
+          "forceRematch": false,
+          "ids": [
+           "7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c"
+          ],
+          "webhooks": [
+           "banktransaction.created",
+           "transaction.match.created"
+          ]
+         }
+        }
+       },
+       "schema": {
+        "$ref": "#/components/schemas/bank-transaction-webhooks-params"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Trigger Webhooks Response": {
+          "value": {
+           "emitted": 2,
+           "failed": [],
+           "matched": 1,
+           "message": "Processed 1 transactions",
+           "resent": 0,
+           "skipped": 0
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-transaction-webhooks-result"
+        }
+       }
+      }
+     },
+     "400": {
+      "$ref": "#/components/responses/banking_bad_request"
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_staff_only_forbidden"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   }
+  },
+  "/bank-transactions/{subaccountId}/{transactionId}": {
+   "get": {
+    "operationId": "GetBankTransaction",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Get Bank Transaction Response": {
+          "$ref": "#/components/examples/bank-transaction"
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/bank-transaction"
+        }
+       }
+      }
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_read_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   },
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/subaccount-id-2"
+    },
+    {
+     "$ref": "#/components/parameters/transaction-id"
+    }
+   ]
+  },
+  "/transaction-matches/{subaccountId}": {
+   "get": {
+    "operationId": "ListTransactionMatches",
+    "parameters": [
+     {
+      "$ref": "#/components/parameters/bank-account-id-2"
+     },
+     {
+      "$ref": "#/components/parameters/card-id-2"
+     },
+     {
+      "$ref": "#/components/parameters/bank-transaction-id"
+     },
+     {
+      "$ref": "#/components/parameters/card-transaction-id"
+     },
+     {
+      "$ref": "#/components/parameters/min-confidence"
+     },
+     {
+      "$ref": "#/components/parameters/start-date"
+     },
+     {
+      "$ref": "#/components/parameters/end-date"
+     },
+     {
+      "$ref": "#/components/parameters/banking-limit"
+     },
+     {
+      "$ref": "#/components/parameters/cursor"
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example List Transaction Matches Response": {
+          "value": {
+           "items": [
+            {
+             "_links": {
+              "bankTransaction": {
+               "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c"
+              },
+              "cardTransaction": {
+               "href": "/transactions/a9b8c7d6-e5f4-3a2b-1c0d-9e8f7a6b5c4d"
+              },
+              "self": {
+               "href": "/transaction-matches/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e"
+              }
+             },
+             "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+             "bankTransaction": {
+              "amount": 42.5,
+              "currency": "USD",
+              "date": "2025-10-15",
+              "description": "UBER TRIP",
+              "merchantName": "Uber"
+             },
+             "bankTransactionId": "7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c",
+             "cardTransaction": {
+              "amount": 42.5,
+              "currency": "USD",
+              "date": "2025-10-15",
+              "descriptor": "UBER TRIP"
+             },
+             "cardTransactionId": "a9b8c7d6-e5f4-3a2b-1c0d-9e8f7a6b5c4d",
+             "confidence": "HIGH",
+             "createdAt": "2025-10-15T14:31:00.000Z",
+             "id": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+             "reasons": [
+              {
+               "bankValue": "42.50",
+               "cardValue": "42.50",
+               "diff": 0,
+               "message": "Exact amount match ($42.50)",
+               "score": 1,
+               "type": "Amount"
+              },
+              {
+               "bankValue": "2025-10-15",
+               "cardValue": "2025-10-15",
+               "diff": 0,
+               "message": "Transaction dates within 1 day",
+               "score": 0.9,
+               "type": "Date"
+              },
+              {
+               "bankValue": "Uber",
+               "cardValue": "UBER TRIP",
+               "diff": 0,
+               "message": "Merchant name contains match (Uber)",
+               "score": 0.85,
+               "type": "Merchant"
+              }
+             ],
+             "score": 0.85,
+             "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11"
+            }
+           ],
+           "pagination": {
+            "hasMore": false
+           }
+          }
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/transaction-match-list"
+        }
+       }
+      },
+      "links": {
+       "GetFirstTransactionMatch": {
+        "operationId": "GetTransactionMatch",
+        "parameters": {
+         "transactionMatchId": "$response.body#/items/0/id"
+        }
+       }
+      }
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_read_forbidden"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   },
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/subaccount-id-2"
+    }
+   ]
+  },
+  "/transaction-matches/{subaccountId}/{transactionMatchId}": {
+   "get": {
+    "operationId": "GetTransactionMatch",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "examples": {
+         "Example Get Transaction Match Response": {
+          "$ref": "#/components/examples/transaction-match"
+         }
+        },
+        "schema": {
+         "$ref": "#/components/schemas/transaction-match"
+        }
+       }
+      }
+     },
+     "401": {
+      "$ref": "#/components/responses/unauthorized"
+     },
+     "403": {
+      "$ref": "#/components/responses/banking_read_forbidden"
+     },
+     "404": {
+      "$ref": "#/components/responses/banking_not_found"
+     },
+     "500": {
+      "$ref": "#/components/responses/banking_server_error"
+     }
+    }
+   },
+   "parameters": [
+    {
+     "$ref": "#/components/parameters/subaccount-id-2"
+    },
+    {
+     "$ref": "#/components/parameters/transaction-match-id"
+    }
+   ]
+  }
+ }
+}
