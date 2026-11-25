@@ -1,0 +1,2429 @@
+[
+ {
+  "body": {
+   "bin": "411111",
+   "cardCategory": "PURCHASING",
+   "cardFundingType": "CREDIT",
+   "fundingType": "CREDIT",
+   "issuerCountry": "USA",
+   "issuerName": "Example Bank",
+   "issuerRegion": "NA",
+   "network": "VISA",
+   "type": "COMMERCIAL"
+  },
+  "method": "GET",
+  "operation": "lookup_bin",
+  "path": "/bin-lookup",
+  "status": 200
+ },
+ {
+  "body": {
+   "_embedded": {
+    "cardSubscriptions": [
+     {
+      "_links": {
+       "card": {
+        "href": "/cards/5dec2c49-0aa5-4683-a317-427eb5d115f3"
+       },
+       "networkBulkFeed": {
+        "href": "/network-bulk-feeds/7b3e4f12-9a8c-4d5e-b6f1-2c3d4e5f6a7b"
+       },
+       "self": {
+        "href": "/card-subscriptions/75ea3c99-6bf5-4b16-8f68-0cdc43d75806"
+       }
+      },
+      "cardId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+      "createdAt": "2024-12-19T14:45:00Z",
+      "customerReferenceId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+      "effectiveDate": "2024-12-20T14:45:00Z",
+      "enrollmentType": "network-bulk",
+      "expirationDate": "2025-06-19T14:45:00Z",
+      "id": "75ea3c99-6bf5-4b16-8f68-0cdc43d75806",
+      "networkBulkFeedId": "7b3e4f12-9a8c-4d5e-b6f1-2c3d4e5f6a7b",
+      "state": "active",
+      "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+      "updatedAt": "2024-12-19T14:45:00Z"
+     },
+     {
+      "_links": {
+       "card": {
+        "href": "/cards/0457c83a-8eb7-4526-b05a-dc9fb1854fe8"
+       },
+       "self": {
+        "href": "/card-subscriptions/c73f2da7-aa1f-4775-ad38-864b1b6f3162"
+       }
+      },
+      "cardId": "0457c83a-8eb7-4526-b05a-dc9fb1854fe8",
+      "createdAt": "2024-10-19T14:45:00Z",
+      "customerReferenceId": "0457c83a-8eb7-4526-b05a-dc9fb1854fe8",
+      "effectiveDate": "2024-10-20T14:45:00Z",
+      "enrollmentType": "cardholder-single",
+      "expirationDate": "2025-05-19T14:45:00Z",
+      "id": "c73f2da7-aa1f-4775-ad38-864b1b6f3162",
+      "networkBulkFeedId": "d4e5f6a7-b8c9-4d0e-a1b2-c3d4e5f6a7b8",
+      "state": "active",
+      "subaccountId": "29cb4277-b812-4137-b008-e0befa8c6a47",
+      "updatedAt": "2024-10-19T14:45:00Z"
+     },
+     {
+      "_links": {
+       "card": {
+        "href": "/cards/24595efb-4fe5-4c76-a7d3-8bd9d44a96cc"
+       },
+       "networkBulkFeed": {
+        "href": "/network-bulk-feeds/0a20c636-b445-4a95-a3ea-621306ed685c"
+       },
+       "self": {
+        "href": "/card-subscriptions/5f8e6832-97d3-4ab5-8144-9fbbbcd2b285"
+       }
+      },
+      "cardId": "24595efb-4fe5-4c76-a7d3-8bd9d44a96cc",
+      "createdAt": "2025-03-19T14:45:00Z",
+      "customerReferenceId": "0457c83a-8eb7-4526-b05a-dc9fb1854fe8",
+      "effectiveDate": "2025-03-20T14:45:00Z",
+      "enrollmentType": "network-bulk",
+      "expirationDate": "2029-05-19T14:45:00Z",
+      "id": "5f8e6832-97d3-4ab5-8144-9fbbbcd2b285",
+      "networkBulkFeedId": "0a20c636-b445-4a95-a3ea-621306ed685c",
+      "state": "active",
+      "subaccountId": "29cb4277-b812-4137-b008-e0befa8c6a47",
+      "updatedAt": "2025-03-19T14:45:00Z"
+     },
+     {
+      "_links": {
+       "card": {
+        "href": "/cards/e8b45f19-2c76-4a83-b5d1-9f0e3a7c64d2"
+       },
+       "networkBulkFeed": {
+        "href": "/network-bulk-feeds/0a20c636-b445-4a95-a3ea-621306ed685c"
+       },
+       "self": {
+        "href": "/card-subscriptions/9c1d0b47-3e5a-4f28-9d6b-71a4c8e2f503"
+       }
+      },
+      "cardId": "e8b45f19-2c76-4a83-b5d1-9f0e3a7c64d2",
+      "createdAt": "2025-04-01T09:15:00Z",
+      "customerReferenceId": "e8b45f19-2c76-4a83-b5d1-9f0e3a7c64d2",
+      "effectiveDate": "2025-04-02T09:15:00Z",
+      "enrollmentType": "network-bulk",
+      "expirationDate": "2029-05-19T14:45:00Z",
+      "id": "9c1d0b47-3e5a-4f28-9d6b-71a4c8e2f503",
+      "networkBulkFeedId": "0a20c636-b445-4a95-a3ea-621306ed685c",
+      "state": "pending",
+      "subaccountId": "29cb4277-b812-4137-b008-e0befa8c6a47",
+      "updatedAt": "2025-04-01T09:15:00Z"
+     }
+    ]
+   },
+   "_links": {
+    "self": {
+     "href": "/card-subscriptions"
+    }
+   },
+   "totalItems": 4
+  },
+  "method": "GET",
+  "operation": "list_card_subscriptions",
+  "path": "/card-subscriptions",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "card": {
+     "href": "/cards/5dec2c49-0aa5-4683-a317-427eb5d115f3"
+    },
+    "self": {
+     "href": "/card-subscriptions/75ea3c99-6bf5-4b16-8f68-0cdc43d75806"
+    }
+   },
+   "cardId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+   "createdAt": "2024-12-19T14:45:00Z",
+   "customerReferenceId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+   "effectiveDate": "2024-12-20T14:45:00Z",
+   "enrollmentType": "cardholder-single",
+   "expirationDate": "2025-06-19T14:45:00Z",
+   "id": "75ea3c99-6bf5-4b16-8f68-0cdc43d75806",
+   "networkBulkFeedId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+   "state": "active",
+   "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+   "updatedAt": "2024-12-19T14:45:00Z"
+  },
+  "method": "GET",
+  "operation": "get_card_subscription",
+  "path": "/card-subscriptions/{subscriptionId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "card": {
+     "href": "/cards/5dec2c49-0aa5-4683-a317-427eb5d115f3"
+    },
+    "self": {
+     "href": "/card-subscriptions/75ea3c99-6bf5-4b16-8f68-0cdc43d75806"
+    }
+   },
+   "cardId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+   "createdAt": "2024-12-19T14:45:00Z",
+   "customerReferenceId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+   "deactivationReason": "cardholder_offboarded",
+   "effectiveDate": "2024-12-20T14:45:00Z",
+   "enrollmentType": "cardholder-single",
+   "expirationDate": "2025-06-19T14:45:00Z",
+   "id": "75ea3c99-6bf5-4b16-8f68-0cdc43d75806",
+   "state": "deactivated",
+   "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+   "updatedAt": "2025-02-03T09:12:00Z"
+  },
+  "method": "PATCH",
+  "operation": "update_card_subscription",
+  "path": "/card-subscriptions/{subscriptionId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_embedded": {
+    "cardVerifications": [
+     {
+      "_links": {
+       "self": {
+        "href": "/card-verifications/3ds/9fab1bea-bc1e-4757-bd47-479422e5983b"
+       },
+       "steps": {
+        "href": "/card-verifications/3ds/9fab1bea-bc1e-4757-bd47-479422e5983b/steps"
+       }
+      },
+      "authenticationFlow": "frictionless",
+      "cardId": "8309b5f8-d5d8-49bb-9001-38bf1bb0f1e4",
+      "createdAt": "2024-01-04T18:53:32.000Z",
+      "failureReason": {
+       "category": "authentication_declined",
+       "code": "05",
+       "description": "The card issuer declined the 3-D Secure authentication.",
+       "providerMessage": "The card issuer declined this authentication attempt.",
+       "retryable": true
+      },
+      "id": "9fab1bea-bc1e-4757-bd47-479422e5983b",
+      "state": "failed",
+      "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+      "type": "3DS",
+      "updatedAt": "2024-01-04T18:55:12.000Z"
+     }
+    ]
+   },
+   "_links": {
+    "self": {
+     "href": "/card-verifications/3ds?cardId=8309b5f8-d5d8-49bb-9001-38bf1bb0f1e4&state=failed"
+    }
+   },
+   "totalItems": 1
+  },
+  "method": "GET",
+  "operation": "list_card_verifications",
+  "path": "/card-verifications/3ds",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/card-verifications/3ds/9fab1bea-bc1e-4757-bd47-479422e5983b"
+    },
+    "steps": {
+     "href": "/card-verifications/3ds/9fab1bea-bc1e-4757-bd47-479422e5983b/steps"
+    }
+   },
+   "authenticationFlow": "frictionless",
+   "cardId": "8309b5f8-d5d8-49bb-9001-38bf1bb0f1e4",
+   "createdAt": "2024-01-04T18:53:32.000Z",
+   "currentStepId": null,
+   "failureReason": {
+    "acsReferences": {
+     "acsReferenceNumber": "ACME-ACS-2024-0042",
+     "acsTransactionId": "8a880dc0-d2d2-4067-bcb1-b08d1690b26e",
+     "dsTransactionId": "97267598-fae6-494f-8453-2d3807e0c77f"
+    },
+    "category": "authentication_declined",
+    "code": "05",
+    "description": "The card issuer declined the 3-D Secure authentication.",
+    "issuerMessage": "Your bank declined this verification. Please contact your bank or try another card.",
+    "retryable": true
+   },
+   "id": "9fab1bea-bc1e-4757-bd47-479422e5983b",
+   "state": "failed",
+   "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+   "type": "3DS",
+   "updatedAt": "2024-01-04T18:55:12.000Z"
+  },
+  "method": "GET",
+  "operation": "get_card_verification",
+  "path": "/card-verifications/3ds/{verificationId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "cleared": true,
+   "unlocked": true
+  },
+  "method": "POST",
+  "operation": "unlock_card_verification_attempts",
+  "path": "/card-verifications/unlock",
+  "status": 200
+ },
+ {
+  "body": {
+   "_embedded": {
+    "cards": [
+     {
+      "_links": {
+       "self": {
+        "href": "/cards/8309b5f8-d5d8-49bb-9001-38bf1bb0f1e4"
+       }
+      },
+      "country": "USA",
+      "createdAt": "2024-02-04T18:41:16.142Z",
+      "expiryMonth": 12,
+      "expiryYear": 2026,
+      "first6digits": "424242",
+      "id": "8309b5f8-d5d8-49bb-9001-38bf1bb0f1e4",
+      "last4digits": "4242",
+      "network": "mastercard",
+      "subaccountId": "da6649a8-f0ea-4af0-b342-c0b5c3e024dd",
+      "updatedAt": "2024-02-04T18:41:16.142Z"
+     },
+     {
+      "_links": {
+       "cardholder": {
+        "href": "/cards/f744b691-bf05-4f2a-ab89-bb1afe4eb840/cardholder"
+       },
+       "self": {
+        "href": "/cards/f744b691-bf05-4f2a-ab89-bb1afe4eb840"
+       }
+      },
+      "country": "USA",
+      "createdAt": "2024-02-04T18:41:16.142Z",
+      "expiryMonth": 11,
+      "expiryYear": 2028,
+      "first6digits": "434343",
+      "id": "f744b691-bf05-4f2a-ab89-bb1afe4eb840",
+      "last4digits": "4343",
+      "network": "mastercard",
+      "subaccountId": "da6649a8-f0ea-4af0-b342-c0b5c3e024dd",
+      "updatedAt": "2024-02-04T18:41:16.142Z"
+     }
+    ]
+   },
+   "_links": {
+    "self": {
+     "href": "/cards"
+    }
+   },
+   "totalItems": 2
+  },
+  "method": "GET",
+  "operation": "list_cards",
+  "path": "/cards",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/cards/f744b691-bf05-4f2a-ab89-bb1afe4eb840"
+    }
+   },
+   "country": "USA",
+   "createdAt": "2024-02-04T18:41:16.142Z",
+   "expiryMonth": 11,
+   "expiryYear": 2028,
+   "first6digits": "434343",
+   "id": "f744b691-bf05-4f2a-ab89-bb1afe4eb840",
+   "last4digits": "4343",
+   "network": "mastercard",
+   "subaccountId": "da6649a8-f0ea-4af0-b342-c0b5c3e024dd",
+   "updatedAt": "2024-02-04T18:41:16.142Z"
+  },
+  "method": "GET",
+  "operation": "get_card",
+  "path": "/cards/{cardId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/cards/f744b691-bf05-4f2a-ab89-bb1afe4eb840/cardholder"
+    }
+   },
+   "corporate": {
+    "alternativeEmployeeId": "ALT-EMP-12345",
+    "employeeId": "bb1afe4eb840",
+    "id": "ABC123456789",
+    "legalEntity": {
+     "id": "FR01",
+     "name": "Example Company France SAS"
+    }
+   },
+   "createdAt": "2024-02-04T18:41:16.142Z",
+   "email": "john.doe@example.com",
+   "firstName": "John",
+   "lastName": "Doe",
+   "postalCode": "94105",
+   "updatedAt": "2024-02-04T18:41:16.142Z"
+  },
+  "method": "GET",
+  "operation": "get_cardholder",
+  "path": "/cards/{cardId}/cardholder",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/cards/f744b691-bf05-4f2a-ab89-bb1afe4eb840/cardholder"
+    }
+   },
+   "corporate": {
+    "alternativeEmployeeId": "ALT-EMP-12345",
+    "employeeId": "bb1afe4eb840",
+    "id": "ABC123456789",
+    "legalEntity": {
+     "id": "FR01",
+     "name": "Example Company France SAS"
+    }
+   },
+   "createdAt": "2024-02-04T18:41:16.142Z",
+   "email": "john.doe@example.com",
+   "firstName": "John",
+   "lastName": "Doe",
+   "postalCode": "94105",
+   "updatedAt": "2024-02-04T18:41:16.142Z"
+  },
+  "method": "PATCH",
+  "operation": "update_cardholder",
+  "path": "/cards/{cardId}/cardholder",
+  "status": 200
+ },
+ {
+  "body": {
+   "_embedded": {
+    "enrollmentLinks": [
+     {
+      "_links": {
+       "self": {
+        "href": "/enrollment-links/8e2f4a6c-1b3d-4e5f-9a7b-2c4d6e8f0a1b"
+       }
+      },
+      "createdAt": "2026-11-05T10:00:00.000Z",
+      "createdBy": {
+       "clientId": "5a7c9e1b-3d5f-4a6c-8e0b-2d4f6a8c0e1f",
+       "via": "sdk"
+      },
+      "expiresAt": "2026-11-19T10:00:00.000Z",
+      "id": "8e2f4a6c-1b3d-4e5f-9a7b-2c4d6e8f0a1b",
+      "kind": "team",
+      "maxUses": 50,
+      "startingPoint": "card",
+      "starts": 12,
+      "state": "active",
+      "subaccountId": "6f1c2a3b-4d5e-4f60-8a7b-9c0d1e2f3a4b",
+      "updatedAt": "2026-11-06T16:41:05.000Z",
+      "uses": 12
+     },
+     {
+      "_links": {
+       "self": {
+        "href": "/enrollment-links/1d0a6c52-8f3e-4b7a-9c21-5e4d3b2a1f09"
+       }
+      },
+      "createdAt": "2026-11-04T18:00:00.000Z",
+      "createdBy": {
+       "clientId": "3f9c1e7a-2b4d-4c6e-8f0a-1b3d5e7f9a2c",
+       "via": "api"
+      },
+      "customerReferenceId": "2b7e9d14-5c3a-4f8e-9b21-0d6c4a8e7f35",
+      "expiresAt": "2026-11-11T18:00:00.000Z",
+      "id": "1d0a6c52-8f3e-4b7a-9c21-5e4d3b2a1f09",
+      "kind": "cardholder",
+      "maxUses": 1,
+      "organizationName": "Vertex Industries",
+      "platformName": "Ledgerly",
+      "startingPoint": "card",
+      "starts": 2,
+      "state": "used",
+      "subaccountId": "6f1c2a3b-4d5e-4f60-8a7b-9c0d1e2f3a4b",
+      "updatedAt": "2026-11-05T09:14:22.000Z",
+      "usedAt": "2026-11-05T09:14:22.000Z",
+      "uses": 1
+     }
+    ]
+   },
+   "_links": {
+    "next": {
+     "href": "/enrollment-links?subaccountId=6f1c2a3b-4d5e-4f60-8a7b-9c0d1e2f3a4b&limit=2&cursor=eyJwayI6ImxpbmsjMWQwYTZjNTIifQ"
+    },
+    "self": {
+     "href": "/enrollment-links?subaccountId=6f1c2a3b-4d5e-4f60-8a7b-9c0d1e2f3a4b&limit=2"
+    }
+   }
+  },
+  "method": "GET",
+  "operation": "list_enrollment_links",
+  "path": "/enrollment-links",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/enrollment-links/1d0a6c52-8f3e-4b7a-9c21-5e4d3b2a1f09"
+    }
+   },
+   "createdAt": "2026-11-04T18:00:00.000Z",
+   "createdBy": {
+    "clientId": "3f9c1e7a-2b4d-4c6e-8f0a-1b3d5e7f9a2c",
+    "via": "api"
+   },
+   "customerReferenceId": "2b7e9d14-5c3a-4f8e-9b21-0d6c4a8e7f35",
+   "expiresAt": "2026-11-11T18:00:00.000Z",
+   "id": "1d0a6c52-8f3e-4b7a-9c21-5e4d3b2a1f09",
+   "kind": "cardholder",
+   "maxUses": 1,
+   "organizationName": "Vertex Industries",
+   "platformName": "Ledgerly",
+   "startingPoint": "card",
+   "starts": 0,
+   "state": "active",
+   "subaccountId": "6f1c2a3b-4d5e-4f60-8a7b-9c0d1e2f3a4b",
+   "updatedAt": "2026-11-04T18:00:00.000Z",
+   "url": "https://sdk.sandbox.astrada.co/unified/v2/enroll.html#el1_4bT7m2QxwZ9lK1pN0vYcRfHsUeGdJaLoWiXqBnMzE3S",
+   "uses": 0
+  },
+  "method": "POST",
+  "operation": "create_enrollment_link",
+  "path": "/enrollment-links",
+  "status": 201
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/enrollment-links/1d0a6c52-8f3e-4b7a-9c21-5e4d3b2a1f09"
+    }
+   },
+   "createdAt": "2026-11-04T18:00:00.000Z",
+   "createdBy": {
+    "clientId": "3f9c1e7a-2b4d-4c6e-8f0a-1b3d5e7f9a2c",
+    "via": "api"
+   },
+   "customerReferenceId": "2b7e9d14-5c3a-4f8e-9b21-0d6c4a8e7f35",
+   "expiresAt": "2026-11-11T18:00:00.000Z",
+   "id": "1d0a6c52-8f3e-4b7a-9c21-5e4d3b2a1f09",
+   "kind": "cardholder",
+   "maxUses": 1,
+   "organizationName": "Vertex Industries",
+   "platformName": "Ledgerly",
+   "sessions": [
+    {
+     "expiresAt": "2026-11-05T09:02:10.000Z",
+     "id": "7b9d1f3a-5c7e-4a9b-8d1f-3a5c7e9b1d3f",
+     "startedAt": "2026-11-05T08:02:10.000Z",
+     "state": "expired"
+    },
+    {
+     "completedAt": "2026-11-05T09:14:22.000Z",
+     "expiresAt": "2026-11-05T10:05:40.000Z",
+     "id": "9a3e5c7b-1d2f-4e6a-8b0c-3e5a7c9e1b2d",
+     "outcome": {
+      "cardIds": [
+       "e1b3d5f7-9a1c-4e3b-8d5f-7a9c1e3b5d7f"
+      ],
+      "subscriptionIds": [
+       "c4e6a8b0-2d4f-4a6c-9e1b-3d5f7a9c1e3b"
+      ],
+      "summary": {
+       "cardsEnrolled": 1
+      }
+     },
+     "startedAt": "2026-11-05T09:05:40.000Z",
+     "state": "completed"
+    }
+   ],
+   "startingPoint": "card",
+   "starts": 2,
+   "state": "used",
+   "subaccountId": "6f1c2a3b-4d5e-4f60-8a7b-9c0d1e2f3a4b",
+   "updatedAt": "2026-11-05T09:14:22.000Z",
+   "usedAt": "2026-11-05T09:14:22.000Z",
+   "uses": 1
+  },
+  "method": "GET",
+  "operation": "get_enrollment_link",
+  "path": "/enrollment-links/{linkId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/enrollment-links/8e2f4a6c-1b3d-4e5f-9a7b-2c4d6e8f0a1b"
+    }
+   },
+   "createdAt": "2026-11-05T10:00:00.000Z",
+   "createdBy": {
+    "clientId": "5a7c9e1b-3d5f-4a6c-8e0b-2d4f6a8c0e1f",
+    "via": "sdk"
+   },
+   "expiresAt": "2026-11-19T10:00:00.000Z",
+   "id": "8e2f4a6c-1b3d-4e5f-9a7b-2c4d6e8f0a1b",
+   "kind": "team",
+   "maxUses": 50,
+   "revokedAt": "2026-11-07T09:30:00.000Z",
+   "startingPoint": "card",
+   "starts": 12,
+   "state": "revoked",
+   "subaccountId": "6f1c2a3b-4d5e-4f60-8a7b-9c0d1e2f3a4b",
+   "updatedAt": "2026-11-07T09:30:00.000Z",
+   "uses": 12
+  },
+  "method": "POST",
+  "operation": "revoke_enrollment_link",
+  "path": "/enrollment-links/{linkId}/revoke",
+  "status": 200
+ },
+ {
+  "body": {
+   "availableEnrollmentMethods": [
+    "cardholder-single"
+   ],
+   "singleEligible": true,
+   "unavailable": [
+    "bulkLikelihood"
+   ]
+  },
+  "method": "POST",
+  "operation": "get_enrollment_methods",
+  "path": "/enrollment-methods",
+  "status": 200
+ },
+ {
+  "body": {
+   "alreadyOpen": true,
+   "createdAt": "2026-10-26T16:45:00.000Z",
+   "id": "0d8e5b3a-7c42-4f19-b6a0-3e1f9c2d8a74",
+   "network": "MASTERCARD",
+   "requestId": "e41b7c09-8a2f-4d63-b5e1-0c9f3a6d2b87",
+   "state": "requested",
+   "subaccountId": "24c4f90d-ab3b-4f6e-8a1d-d251a4fcf34c"
+  },
+  "method": "POST",
+  "operation": "create_network_bulk_confirmation",
+  "path": "/network-bulk-confirmations",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/network-bulk-enrollments/9c1f0c4e-2f0e-4a9c-9a1b-0c1d2e3f4a5b"
+    }
+   },
+   "alreadyOpen": true,
+   "createdAt": "2026-09-10T21:30:00.000Z",
+   "id": "9c1f0c4e-2f0e-4a9c-9a1b-0c1d2e3f4a5b",
+   "network": "MASTERCARD",
+   "networkBulkFeedId": null,
+   "requestId": "6b0e2a94-3d71-4c58-9f2e-1a7c5d8b3e60",
+   "state": "requested",
+   "subaccountId": "24c4f90d-ab3b-4f6e-8a1d-d251a4fcf34c"
+  },
+  "method": "POST",
+  "operation": "create_network_bulk_enrollment",
+  "path": "/network-bulk-enrollments",
+  "status": 200
+ },
+ {
+  "body": {
+   "open": false
+  },
+  "method": "GET",
+  "operation": "get_open_network_bulk_enrollment",
+  "path": "/network-bulk-enrollments/open",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/network-bulk-enrollments/9c1f0c4e-2f0e-4a9c-9a1b-0c1d2e3f4a5b"
+    }
+   },
+   "bankContact": {
+    "email": "sam.lee@bank.example",
+    "name": "Sam Lee"
+   },
+   "bin": "51075500",
+   "binInfo": {
+    "fundingType": "CREDIT",
+    "issuerCountry": "USA",
+    "issuerName": "Jack Henry And Associates",
+    "type": "COMMERCIAL"
+   },
+   "cardAdmin": {
+    "email": "dana.whitfield@vertexind.com",
+    "name": "Dana Whitfield"
+   },
+   "cardCountBand": "251-1000",
+   "company": {
+    "legalName": "Vertex Industries, Inc."
+   },
+   "consent": {
+    "acceptedAt": "2026-09-10T21:30:00.000Z",
+    "version": "kickoff-consent-v1"
+   },
+   "createdAt": "2026-09-10T21:30:00.000Z",
+   "customerReferenceId": "ledgerly-customer-8842",
+   "id": "9c1f0c4e-2f0e-4a9c-9a1b-0c1d2e3f4a5b",
+   "network": "MASTERCARD",
+   "networkBulkFeedId": null,
+   "outreach": "astrada",
+   "state": "requested",
+   "subaccountId": "24c4f90d-ab3b-4f6e-8a1d-d251a4fcf34c",
+   "updatedAt": "2026-09-10T21:30:00.000Z"
+  },
+  "method": "GET",
+  "operation": "get_network_bulk_enrollment",
+  "path": "/network-bulk-enrollments/{networkBulkEnrollmentId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_embedded": {
+    "networkBulkFeeds": [
+     {
+      "_links": {
+       "self": {
+        "href": "/network-bulk-feeds/75ea3c99-6bf5-4b16-8f68-0cdc43d75806"
+       }
+      },
+      "createdAt": "2024-12-19T14:45:00Z",
+      "id": "75ea3c99-6bf5-4b16-8f68-0cdc43d75806",
+      "network": "MASTERCARD",
+      "networkReference": "G1234567",
+      "panFormat": "encrypted",
+      "state": "submitted",
+      "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+      "type": "SMARTDATA",
+      "updatedAt": "2024-12-19T14:45:00Z"
+     },
+     {
+      "_links": {
+       "self": {
+        "href": "/network-bulk-feeds/c73f2da7-aa1f-4775-ad38-864b1b6f3162"
+       }
+      },
+      "createdAt": "2024-10-19T14:45:00Z",
+      "id": "c73f2da7-aa1f-4775-ad38-864b1b6f3162",
+      "network": "MASTERCARD",
+      "networkReference": "G1234567",
+      "panFormat": "encrypted",
+      "state": "submitted",
+      "subaccountId": "29cb4277-b812-4137-b008-e0befa8c6a47",
+      "type": "SMARTDATA",
+      "updatedAt": "2024-10-19T14:45:00Z"
+     },
+     {
+      "_links": {
+       "self": {
+        "href": "/network-bulk-feeds/a3b1c2d4-5e6f-7890-abcd-ef1234567890"
+       }
+      },
+      "createdAt": "2024-12-19T14:45:00Z",
+      "errorReason": "Starter data ingestion failed: invalid RPIC configuration",
+      "id": "a3b1c2d4-5e6f-7890-abcd-ef1234567890",
+      "network": "VISA",
+      "networkReference": "1_123_45_6789",
+      "panFormat": "encrypted",
+      "state": "failed",
+      "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+      "type": "VBDS",
+      "updatedAt": "2024-12-20T10:30:00Z"
+     }
+    ]
+   },
+   "_links": {
+    "self": {
+     "href": "/network-bulk-feeds"
+    }
+   },
+   "totalItems": 3
+  },
+  "method": "GET",
+  "operation": "list_network_bulk_feeds",
+  "path": "/network-bulk-feeds",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/network-bulk-feeds/75ea3c99-6bf5-4b16-8f68-0cdc43d75806"
+    }
+   },
+   "createdAt": "2024-12-19T14:45:00Z",
+   "id": "75ea3c99-6bf5-4b16-8f68-0cdc43d75806",
+   "network": "MASTERCARD",
+   "networkReference": "G1234567",
+   "panFormat": "encrypted",
+   "state": "submitted",
+   "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+   "type": "SMARTDATA",
+   "updatedAt": "2024-12-19T14:45:00Z"
+  },
+  "method": "POST",
+  "operation": "create_network_bulk_feed",
+  "path": "/network-bulk-feeds",
+  "status": 201
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/network-bulk-feeds/a3b1c2d4-5e6f-7890-abcd-ef1234567890"
+    }
+   },
+   "createdAt": "2024-12-19T14:45:00Z",
+   "errorReason": "Starter data ingestion failed: invalid RPIC configuration",
+   "id": "a3b1c2d4-5e6f-7890-abcd-ef1234567890",
+   "network": "VISA",
+   "networkReference": "1_1_9999_789452",
+   "panFormat": "encrypted",
+   "state": "failed",
+   "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+   "type": "VBDS",
+   "updatedAt": "2024-12-20T10:30:00Z"
+  },
+  "method": "GET",
+  "operation": "get_network_bulk_feed",
+  "path": "/network-bulk-feeds/{networkBulkFeedId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/network-bulk-feeds/75ea3c99-6bf5-4b16-8f68-0cdc43d75806"
+    }
+   },
+   "createdAt": "2024-12-19T14:45:00Z",
+   "id": "75ea3c99-6bf5-4b16-8f68-0cdc43d75806",
+   "network": "MASTERCARD",
+   "networkReference": "G1234567",
+   "panFormat": "encrypted",
+   "state": "submitted",
+   "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+   "type": "SMARTDATA",
+   "updatedAt": "2024-12-19T14:45:00Z"
+  },
+  "method": "PATCH",
+  "operation": "update_network_bulk_feed",
+  "path": "/network-bulk-feeds/{networkBulkFeedId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_embedded": {
+    "subaccounts": [
+     {
+      "_links": {
+       "self": {
+        "href": "/subaccounts/81e7c267-0927-4234-a2bd-78cef799de54"
+       }
+      },
+      "accountId": "073fe1bb-3350-46ad-b3a6-32afb3780994",
+      "configurations": {
+       "MASTERCARD": {
+        "bulk-enrollment": {
+         "blockedCardTypes": [],
+         "blockedFundingCardTypes": [],
+         "countries": [
+          "USA"
+         ]
+        },
+        "countries": [
+         "USA"
+        ],
+        "single-enrollment": {
+         "blockedCardTypes": [],
+         "blockedFundingCardTypes": [],
+         "countries": [
+          "USA"
+         ]
+        }
+       },
+       "VISA": {
+        "bulk-enrollment": {
+         "blockedCardTypes": [
+          "CONSUMER"
+         ],
+         "blockedFundingCardTypes": [
+          "DEBIT"
+         ],
+         "countries": [
+          "USA",
+          "CAN"
+         ]
+        },
+        "countries": [
+         "USA",
+         "CAN"
+        ],
+        "single-enrollment": {
+         "blockedCardTypes": [
+          "CONSUMER"
+         ],
+         "blockedFundingCardTypes": [
+          "DEBIT"
+         ],
+         "countries": [
+          "USA",
+          "CAN"
+         ]
+        }
+       }
+      },
+      "createdAt": "2024-05-01T17:08:43.810Z",
+      "id": "81e7c267-0927-4234-a2bd-78cef799de54",
+      "name": "Subaccount A",
+      "updatedAt": "2024-05-01T17:08:43.810Z"
+     },
+     {
+      "_links": {
+       "self": {
+        "href": "/subaccounts/3788493c-49f5-4f5e-9152-56abc2a4e153"
+       }
+      },
+      "accountId": "073fe1bb-3350-46ad-b3a6-32afb3780994",
+      "configurations": {
+       "MASTERCARD": {
+        "bulk-enrollment": {
+         "blockedCardTypes": [],
+         "blockedFundingCardTypes": [],
+         "countries": [
+          "USA"
+         ]
+        },
+        "countries": [
+         "USA"
+        ],
+        "single-enrollment": {
+         "blockedCardTypes": [
+          "CONSUMER"
+         ],
+         "blockedFundingCardTypes": [],
+         "countries": [
+          "USA"
+         ]
+        }
+       },
+       "VISA": {
+        "bulk-enrollment": {
+         "blockedCardTypes": [],
+         "blockedFundingCardTypes": [],
+         "countries": [
+          "USA",
+          "CAN"
+         ]
+        },
+        "countries": [
+         "USA",
+         "CAN"
+        ],
+        "single-enrollment": {
+         "blockedCardTypes": [],
+         "blockedFundingCardTypes": [
+          "DEBIT"
+         ],
+         "countries": [
+          "USA",
+          "CAN"
+         ]
+        }
+       }
+      },
+      "createdAt": "2024-05-01T17:08:43.810Z",
+      "id": "3788493c-49f5-4f5e-9152-56abc2a4e153",
+      "name": "Subaccount B",
+      "updatedAt": "2024-05-01T17:08:43.810Z"
+     }
+    ]
+   },
+   "_links": {
+    "self": {
+     "href": "/subaccounts"
+    }
+   }
+  },
+  "method": "GET",
+  "operation": "list_subaccounts",
+  "path": "/subaccounts",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/subaccounts/81e7c267-0927-4234-a2bd-78cef799de54"
+    }
+   },
+   "accountId": "073fe1bb-3350-46ad-b3a6-32afb3780994",
+   "amexProduct": {
+    "clearing": {
+     "enabled": true
+    },
+    "realTimeAuth": null
+   },
+   "configurations": {
+    "AMEX": {
+     "bulk-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "SWE"
+      ]
+     },
+     "countries": [
+      "ITA"
+     ],
+     "single-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "ITA"
+      ]
+     }
+    },
+    "MASTERCARD": {
+     "bulk-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "GBR"
+      ]
+     },
+     "countries": [
+      "USA"
+     ],
+     "single-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "USA"
+      ]
+     }
+    },
+    "VISA": {
+     "bulk-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "CAN"
+      ]
+     },
+     "countries": [
+      "USA",
+      "CAN"
+     ],
+     "single-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "USA"
+      ]
+     }
+    }
+   },
+   "createdAt": "2024-05-01T17:08:43.810Z",
+   "id": "81e7c267-0927-4234-a2bd-78cef799de54",
+   "name": "Subaccount A",
+   "updatedAt": "2024-05-01T17:08:43.810Z"
+  },
+  "method": "POST",
+  "operation": "create_subaccount",
+  "path": "/subaccounts",
+  "status": 201
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/subaccounts/81e7c267-0927-4234-a2bd-78cef799de54"
+    }
+   },
+   "accountId": "073fe1bb-3350-46ad-b3a6-32afb3780994",
+   "amexProduct": {
+    "clearing": {
+     "enabled": true
+    },
+    "realTimeAuth": null
+   },
+   "configurations": {
+    "AMEX": {
+     "bulk-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "SWE"
+      ]
+     },
+     "countries": [
+      "ITA"
+     ],
+     "single-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "ITA"
+      ]
+     }
+    },
+    "MASTERCARD": {
+     "bulk-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "GBR"
+      ]
+     },
+     "countries": [
+      "USA"
+     ],
+     "single-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "USA"
+      ]
+     }
+    },
+    "VISA": {
+     "bulk-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "CAN"
+      ]
+     },
+     "countries": [
+      "USA",
+      "CAN"
+     ],
+     "single-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "USA"
+      ]
+     }
+    }
+   },
+   "createdAt": "2024-05-01T17:08:43.810Z",
+   "id": "81e7c267-0927-4234-a2bd-78cef799de54",
+   "name": "Subaccount A",
+   "updatedAt": "2024-05-01T17:08:43.810Z"
+  },
+  "method": "GET",
+  "operation": "get_subaccount",
+  "path": "/subaccounts/{subaccountId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/subaccounts/81e7c267-0927-4234-a2bd-78cef799de54"
+    }
+   },
+   "accountId": "073fe1bb-3350-46ad-b3a6-32afb3780994",
+   "amexProduct": {
+    "clearing": {
+     "enabled": true
+    },
+    "realTimeAuth": null
+   },
+   "configurations": {
+    "AMEX": {
+     "bulk-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "SWE"
+      ]
+     },
+     "countries": [
+      "ITA"
+     ],
+     "single-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "ITA"
+      ]
+     }
+    },
+    "MASTERCARD": {
+     "bulk-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "GBR"
+      ]
+     },
+     "countries": [
+      "USA"
+     ],
+     "single-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "USA"
+      ]
+     }
+    },
+    "VISA": {
+     "bulk-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "CAN"
+      ]
+     },
+     "countries": [
+      "USA",
+      "CAN"
+     ],
+     "single-enrollment": {
+      "blockedCardTypes": [
+       "CONSUMER"
+      ],
+      "blockedFundingCardTypes": [
+       "DEBIT"
+      ],
+      "countries": [
+       "USA"
+      ]
+     }
+    }
+   },
+   "createdAt": "2024-05-01T17:08:43.810Z",
+   "id": "81e7c267-0927-4234-a2bd-78cef799de54",
+   "name": "Subaccount A",
+   "updatedAt": "2024-05-01T17:08:43.810Z"
+  },
+  "method": "PATCH",
+  "operation": "update_subaccount",
+  "path": "/subaccounts/{subaccountId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "expiresAt": "2026-11-19T10:00:00.000Z",
+   "id": "8e2f4a6c-1b3d-4e5f-9a7b-2c4d6e8f0a1b",
+   "maxUses": 50,
+   "url": "https://sdk.sandbox.astrada.co/unified/v2/enroll.html#el1_Qm9Lx2Vt8RkZ1pW4nJ7cH0sD3fG6aY9uE2iO5rT8bN1"
+  },
+  "method": "POST",
+  "operation": "create_team_link",
+  "path": "/subaccounts/{subaccountId}/team-link",
+  "status": 201
+ },
+ {
+  "body": {
+   "_links": {
+    "raw": {
+     "href": "/transaction-messages/80b08eeb-c4cc-4e5c-8d0b-15bc2e04b4dc/raw"
+    },
+    "self": {
+     "href": "/transaction-messages/80b08eeb-c4cc-4e5c-8d0b-15bc2e04b4dc"
+    }
+   },
+   "acceptor": {
+    "acquirerId": null,
+    "city": "LONDON",
+    "country": "GBR",
+    "id": "KWGBYTEI4FL0QQQ",
+    "mcc": "5734",
+    "name": "Uber",
+    "state": "LND"
+   },
+   "accountId": "a49fdf13-62ce-4704-80bf-82f317cc215e",
+   "approvalCode": "537254",
+   "bankData": null,
+   "cardId": "bf4d1e23-0f5a-42a7-81f2-bc66f392a98c",
+   "cardType": "virtual",
+   "cardholderBillingAmount": 1.18,
+   "cardholderBillingCurrency": "GBP",
+   "createdDateTime": "2024-04-26T01:41:22.544Z",
+   "dateTime": "2024-04-24T13:39:45Z",
+   "discountAmount": null,
+   "id": "80b08eeb-c4cc-4e5c-8d0b-15bc2e04b4dc",
+   "messageType": "FINL_ADVC",
+   "network": "MASTERCARD",
+   "result": "APPROVED",
+   "subaccountId": "cb4d801e-a10a-4f42-b9de-1c51685ffd8a",
+   "traceId": null,
+   "transactionAmount": 1.45,
+   "transactionCurrency": "USD",
+   "transactionReference": "IWVQ22_2024-04-24",
+   "transactionType": "DEBIT_01",
+   "transmissionDateTime": "2024-04-25T00:00:00.000Z"
+  },
+  "method": "GET",
+  "operation": "get_transaction_message",
+  "path": "/transaction-messages/{transactionMessageId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "message": {
+     "href": "/transaction-messages/80b08eeb-c4cc-4e5c-8d0b-15bc2e04b4dc"
+    },
+    "self": {
+     "href": "/transaction-messages/80b08eeb-c4cc-4e5c-8d0b-15bc2e04b4dc/raw"
+    }
+   },
+   "raw": {
+    "acquiringInstitutionIdentificationCode": "KWGBYTEI4FL0QQQ",
+    "authorizationIdentificationResponse": "537254",
+    "cardAcceptorIdentificationCode": "KWGBYTEI4FL0QQQ",
+    "cardAcceptorNameLocation": "Uber                    LONDON      LNDGBR",
+    "cardAcceptorTerminalIdentification": "TERMINAL01",
+    "cardholderBillingAmount": "000000000118",
+    "cardholderBillingCurrency": "826",
+    "localTransactionDate": "0424",
+    "localTransactionTime": "133945",
+    "merchantType": "5734",
+    "messageTypeIndicator": "0100",
+    "networkManagementInformationCode": "MASTERCARD",
+    "primaryAccountNumber": "444444******0000",
+    "processingCode": "000000",
+    "responseCode": "00",
+    "retrievalReferenceNumber": "IWVQ22_2024-04-24",
+    "systemsTraceAuditNumber": "537254",
+    "transactionAmount": "000000000145",
+    "transactionCurrencyCode": "840",
+    "transmissionDateTime": "0425000000"
+   }
+  },
+  "method": "GET",
+  "operation": "get_raw_transaction_message",
+  "path": "/transaction-messages/{transactionMessageId}/raw",
+  "status": 200
+ },
+ {
+  "body": {
+   "_embedded": {
+    "transactions": [
+     {
+      "_links": {
+       "card": {
+        "href": "/subaccounts/f4b24a0a-6a37-4ce3-8845-ddf0b604a9b6"
+       },
+       "messages": [
+        {
+         "href": "/transaction-messages/f4b24a0a-6a37-4ce3-8845-ddf0b604a9b4"
+        },
+        {
+         "href": "/transaction-messages/934f8701-53e3-4a2b-a000-6bb52195d2ea"
+        }
+       ],
+       "self": {
+        "href": "/transactions/f4b24a0a-6a37-4ce3-8845-ddf0b604a9b4"
+       },
+       "subaccount": {
+        "href": "/subaccounts/f4b24a0a-6a37-4ce3-8845-ddf0b604a9b5"
+       }
+      },
+      "acceptor": {
+       "city": "LONDON",
+       "country": "GBR",
+       "mcc": "5734",
+       "state": "LND"
+      },
+      "cardId": "4d1ff59f-4286-4209-9662-92e174193562",
+      "cardholderBillingCurrency": "GBP",
+      "cardholderBillingHoldAmount": 0,
+      "cardholderBillingSettledAmount": 0.81,
+      "createdAt": "2024-05-01T06:41:43.810Z",
+      "descriptor": "Uber",
+      "id": "8697df0c-9011-47ca-a52b-8d2a7a4ad903",
+      "network": "MASTERCARD",
+      "networkBulkFeedId": "2fd4d402-b759-479c-87a6-58d85e345356",
+      "status": "SETTLED",
+      "subaccountId": "c6d5e036-361e-4773-a514-b9496cf2d2b5",
+      "supersededMessageIds": [],
+      "transactionCurrency": "USD",
+      "transactionHoldAmount": 0,
+      "transactionOccurrenceDate": "2024-05-01",
+      "transactionSettledAmount": 1,
+      "transactionType": "DEBIT_01",
+      "updatedAt": "2024-05-02T08:41:43.810Z"
+     }
+    ]
+   },
+   "_links": {
+    "self": {
+     "href": "/transactions"
+    }
+   }
+  },
+  "method": "GET",
+  "operation": "list_transactions",
+  "path": "/transactions",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "card": {
+     "href": "/cards/4d1ff59f-4286-4209-9662-92e174193562"
+    },
+    "messages": [
+     {
+      "href": "/transaction-messages/f4b24a0a-6a37-4ce3-8845-ddf0b604a9b4"
+     },
+     {
+      "href": "/transaction-messages/934f8701-53e3-4a2b-a000-6bb52195d2ea"
+     }
+    ],
+    "self": {
+     "href": "/transactions/8697df0c-9011-47ca-a52b-8d2a7a4ad903"
+    },
+    "subaccount": {
+     "href": "/subaccounts/c6d5e036-361e-4773-a514-b9496cf2d2b5"
+    }
+   },
+   "acceptor": {
+    "city": "LONDON",
+    "country": "GBR",
+    "mcc": "5734",
+    "state": "LND"
+   },
+   "cardId": "4d1ff59f-4286-4209-9662-92e174193562",
+   "cardholderBillingCurrency": "GBP",
+   "cardholderBillingHoldAmount": 0,
+   "cardholderBillingSettledAmount": 0.81,
+   "createdAt": "2024-05-01T06:41:43.810Z",
+   "descriptor": "Uber",
+   "id": "8697df0c-9011-47ca-a52b-8d2a7a4ad903",
+   "network": "MASTERCARD",
+   "status": "SETTLED",
+   "subaccountId": "c6d5e036-361e-4773-a514-b9496cf2d2b5",
+   "supersededMessageIds": [],
+   "transactionCurrency": "USD",
+   "transactionHoldAmount": 0,
+   "transactionOccurrenceDate": "2024-05-01",
+   "transactionSettledAmount": 1,
+   "updatedAt": "2024-05-02T08:41:43.810Z"
+  },
+  "method": "GET",
+  "operation": "get_transaction",
+  "path": "/transactions/{transactionId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_embedded": {
+    "webhooks": [
+     {
+      "_links": {
+       "self": {
+        "href": "/webhooks/3a45ba7f-8d8f-4f6a-86a5-a17ea0328241"
+       }
+      },
+      "createdAt": "2023-12-19T14:45:00Z",
+      "description": "Example of Webhook description",
+      "enabled": true,
+      "eventTypes": [
+       "transactionmessage.created"
+      ],
+      "id": "3a45ba7f-8d8f-4f6a-86a5-a17ea0328241",
+      "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+      "updatedAt": "2023-12-19T14:45:00Z",
+      "url": "https://example-api.com/path"
+     },
+     {
+      "_links": {
+       "self": {
+        "href": "/webhooks/627f9c6d-ec9f-4118-84f3-97a77f447e32"
+       }
+      },
+      "createdAt": "2023-12-19T14:46:00Z",
+      "description": "Example of Webhook description",
+      "enabled": true,
+      "eventTypes": [
+       "transactionmessage.created"
+      ],
+      "id": "627f9c6d-ec9f-4118-84f3-97a77f447e32",
+      "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+      "updatedAt": "2023-12-19T14:46:00Z",
+      "url": "https://example-api.com/path"
+     }
+    ]
+   },
+   "_links": {
+    "self": {
+     "href": "/webhooks"
+    }
+   }
+  },
+  "method": "GET",
+  "operation": "list_webhooks",
+  "path": "/webhooks",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/webhooks/3a45ba7f-8d8f-4f6a-86a5-a17ea0328241"
+    }
+   },
+   "createdAt": "2023-12-19T14:45:00Z",
+   "description": "Example of Webhook description",
+   "enabled": true,
+   "eventTypes": [
+    "transactionmessage.created"
+   ],
+   "id": "3a45ba7f-8d8f-4f6a-86a5-a17ea0328241",
+   "secret": "ODk4ZDAxYjYtZjM4NC00MzdmLWEzMDMtM2M0NjA1NWY5NTQ5",
+   "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+   "updatedAt": "2023-12-19T14:45:00Z",
+   "url": "https://example-api.com/path"
+  },
+  "method": "POST",
+  "operation": "create_webhook",
+  "path": "/webhooks",
+  "status": 201
+ },
+ {
+  "body": null,
+  "method": "DELETE",
+  "operation": "delete_webhook",
+  "path": "/webhooks/{webhookId}",
+  "status": 204
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/webhooks/3a45ba7f-8d8f-4f6a-86a5-a17ea0328241"
+    }
+   },
+   "createdAt": "2023-12-19T14:45:00Z",
+   "description": "Example of Webhook description",
+   "enabled": true,
+   "eventTypes": [
+    "transactionmessage.created"
+   ],
+   "id": "3a45ba7f-8d8f-4f6a-86a5-a17ea0328241",
+   "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+   "updatedAt": "2023-12-19T14:45:00Z",
+   "url": "https://example-api.com/path"
+  },
+  "method": "GET",
+  "operation": "get_webhook",
+  "path": "/webhooks/{webhookId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/webhooks/3a45ba7f-8d8f-4f6a-86a5-a17ea0328241"
+    }
+   },
+   "createdAt": "2023-12-19T14:45:00Z",
+   "description": "Example of Webhook description",
+   "enabled": true,
+   "eventTypes": [
+    "transactionmessage.created"
+   ],
+   "id": "3a45ba7f-8d8f-4f6a-86a5-a17ea0328241",
+   "subaccountId": "f297d659-c13d-4219-aeaa-e10a845140a5",
+   "updatedAt": "2023-12-19T14:45:00Z",
+   "url": "https://example-api.com/path"
+  },
+  "method": "PATCH",
+  "operation": "update_webhook",
+  "path": "/webhooks/{webhookId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "items": [
+    {
+     "_links": {
+      "bankLink": {
+       "href": "/bank-links/enrollment_792dcb7d"
+      },
+      "self": {
+       "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+      },
+      "transactions": {
+       "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11?bankAccountId=3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+      }
+     },
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "bankLinkId": "enrollment_792dcb7d",
+     "cardIds": [
+      "5dec2c49-0aa5-4683-a317-427eb5d115f3"
+     ],
+     "cards": [],
+     "createdAt": "2025-10-03T10:55:42.000Z",
+     "currency": "USD",
+     "externalId": "plaid_acc_792dcb7d",
+     "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+     "institutionName": "Chase",
+     "lastSyncedAt": "2025-10-03T11:12:07.000Z",
+     "mask": "1234",
+     "name": "Checking",
+     "state": "active",
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+     "subscriptionState": "active",
+     "type": "checking",
+     "updatedAt": "2025-10-03T10:55:42.000Z"
+    },
+    {
+     "_links": {
+      "bankLink": {
+       "href": "/bank-links/enrollment_792dcb7d"
+      },
+      "self": {
+       "href": "/bank-accounts/9b7e4d2f-8a3c-1e6f-d5b0-2c4a6e8f0d1b"
+      },
+      "transactions": {
+       "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11?bankAccountId=9b7e4d2f-8a3c-1e6f-d5b0-2c4a6e8f0d1b"
+      }
+     },
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "bankLinkId": "enrollment_792dcb7d",
+     "cardIds": [],
+     "cards": [],
+     "createdAt": "2025-10-03T10:55:42.000Z",
+     "currency": "USD",
+     "externalId": "plaid_acc_792dcb7e",
+     "id": "9b7e4d2f-8a3c-1e6f-d5b0-2c4a6e8f0d1b",
+     "institutionName": "Chase",
+     "lastSyncedAt": "2025-10-03T11:12:07.000Z",
+     "mask": "5678",
+     "name": "Savings",
+     "state": "active",
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+     "subscriptionState": "active",
+     "type": "checking",
+     "updatedAt": "2025-10-03T10:55:42.000Z"
+    }
+   ],
+   "pagination": {
+    "hasMore": false
+   }
+  },
+  "method": "GET",
+  "operation": "list_bank_accounts",
+  "path": "/bank-accounts",
+  "status": 200
+ },
+ {
+  "body": {
+   "linked": {
+    "059d5e6a-cfb1-46e6-ab84-6586582b6b58": [
+     "da28e1b8-c7a4-4575-b72f-3a88d6fe34df"
+    ]
+   }
+  },
+  "method": "POST",
+  "operation": "link_enrolled_cards",
+  "path": "/bank-accounts/link-enrolled-cards",
+  "status": 201
+ },
+ {
+  "body": {
+   "linked": {
+    "059d5e6a-cfb1-46e6-ab84-6586582b6b58": [
+     "da28e1b8-c7a4-4575-b72f-3a88d6fe34df"
+    ]
+   }
+  },
+  "method": "POST",
+  "operation": "run_bank_account_maintenance",
+  "path": "/bank-accounts/maintenance",
+  "status": 201
+ },
+ {
+  "body": null,
+  "method": "DELETE",
+  "operation": "delete_bank_account",
+  "path": "/bank-accounts/{bankAccountId}",
+  "status": 204
+ },
+ {
+  "body": {
+   "_links": {
+    "bankLink": {
+     "href": "/bank-links/enrollment_792dcb7d"
+    },
+    "self": {
+     "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+    },
+    "transactions": {
+     "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11?bankAccountId=3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+    }
+   },
+   "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+   "bankLinkId": "enrollment_792dcb7d",
+   "cardIds": [
+    "5dec2c49-0aa5-4683-a317-427eb5d115f3"
+   ],
+   "cards": [],
+   "createdAt": "2025-10-03T10:55:42.000Z",
+   "currency": "USD",
+   "externalId": "plaid_acc_792dcb7d",
+   "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+   "institutionName": "Chase",
+   "lastSyncedAt": "2025-10-03T11:12:07.000Z",
+   "mask": "1234",
+   "name": "Checking",
+   "state": "active",
+   "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+   "subscriptionState": "active",
+   "type": "checking",
+   "updatedAt": "2025-10-03T10:55:42.000Z"
+  },
+  "method": "GET",
+  "operation": "get_bank_account",
+  "path": "/bank-accounts/{bankAccountId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "cardIds": [
+    "5dec2c49-0aa5-4683-a317-427eb5d115f3"
+   ],
+   "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+   "state": "active",
+   "updatedAt": "2025-10-03T11:00:00.000Z"
+  },
+  "method": "PATCH",
+  "operation": "update_bank_account",
+  "path": "/bank-accounts/{bankAccountId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+   "matchesFound": 27,
+   "transactionsProcessed": 118
+  },
+  "method": "POST",
+  "operation": "backfill_bank_account",
+  "path": "/bank-accounts/{bankAccountId}/backfill",
+  "status": 201
+ },
+ {
+  "body": {
+   "expiresAt": "2025-10-03T14:55:42.000Z",
+   "hostedLink": "https://hosted.plaid.com/link/refresh123",
+   "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+  },
+  "method": "POST",
+  "operation": "refresh_bank_account",
+  "path": "/bank-accounts/{bankAccountId}/refresh",
+  "status": 201
+ },
+ {
+  "body": {
+   "durationMs": 4210,
+   "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+   "requestedAt": "2026-10-05T00:59:10Z"
+  },
+  "method": "POST",
+  "operation": "refresh_bank_account_transactions",
+  "path": "/bank-accounts/{bankAccountId}/transactions/refresh",
+  "status": 202
+ },
+ {
+  "body": {
+   "items": [
+    {
+     "_links": {
+      "bankAccounts": [
+       {
+        "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+       }
+      ],
+      "self": {
+       "href": "/bank-links/enrollment_792dcb7d"
+      }
+     },
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "bankAccounts": [
+      {
+       "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+       "name": "Checking"
+      }
+     ],
+     "completedAt": "2025-10-03T10:55:42.000Z",
+     "createdAt": "2025-10-03T10:25:27.069Z",
+     "hostedLink": null,
+     "id": "enrollment_792dcb7d",
+     "linkExpiresAt": null,
+     "provider": "plaid",
+     "state": "completed",
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11"
+    },
+    {
+     "_links": {
+      "self": {
+       "href": "/bank-links/enrollment_a1b2c3d4"
+      }
+     },
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "createdAt": "2025-10-04T10:25:27.069Z",
+     "hostedLink": "https://hosted.plaid.com/link/abc123",
+     "id": "enrollment_a1b2c3d4",
+     "linkExpiresAt": "2025-10-04T14:25:27.000Z",
+     "provider": "plaid",
+     "state": "pending",
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11"
+    }
+   ],
+   "pagination": {
+    "cursor": "ZXhhbXBsZQ==",
+    "hasMore": false
+   }
+  },
+  "method": "GET",
+  "operation": "list_bank_links",
+  "path": "/bank-links",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "self": {
+     "href": "/bank-links/enrollment_abc123"
+    }
+   },
+   "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+   "createdAt": "2025-10-03T10:25:27.069Z",
+   "hostedLink": "https://hosted.plaid.com/link/abc123",
+   "id": "enrollment_abc123",
+   "linkExpiresAt": "2025-10-03T14:25:27.000Z",
+   "provider": "plaid",
+   "state": "pending",
+   "subaccountId": "50cced63-ee4e-4ff7-a469-aaa989f220f2"
+  },
+  "method": "POST",
+  "operation": "create_bank_link",
+  "path": "/bank-links",
+  "status": 201
+ },
+ {
+  "body": null,
+  "method": "DELETE",
+  "operation": "delete_bank_link",
+  "path": "/bank-links/{bankLinkId}",
+  "status": 204
+ },
+ {
+  "body": {
+   "_links": {
+    "bankAccounts": [
+     {
+      "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+     }
+    ],
+    "self": {
+     "href": "/bank-links/enrollment_792dcb7d"
+    }
+   },
+   "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+   "bankAccounts": [
+    {
+     "cardIds": [
+      "5dec2c49-0aa5-4683-a317-427eb5d115f3"
+     ],
+     "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+     "mask": "4001",
+     "name": "Credit Card",
+     "type": "credit"
+    }
+   ],
+   "completedAt": "2025-10-03T10:55:42.000Z",
+   "createdAt": "2025-10-03T10:25:27.069Z",
+   "hostedLink": null,
+   "id": "enrollment_792dcb7d",
+   "linkExpiresAt": null,
+   "state": "completed",
+   "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11"
+  },
+  "method": "GET",
+  "operation": "get_bank_link",
+  "path": "/bank-links/{bankLinkId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "bankAccounts": [
+     {
+      "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+     }
+    ],
+    "self": {
+     "href": "/bank-links/enrollment_792dcb7d"
+    }
+   },
+   "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+   "bankAccounts": [
+    {
+     "cardIds": [
+      "5dec2c49-0aa5-4683-a317-427eb5d115f3"
+     ],
+     "id": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+     "mask": "4001",
+     "name": "Credit Card",
+     "type": "credit"
+    }
+   ],
+   "completedAt": "2025-10-03T10:55:42.000Z",
+   "createdAt": "2025-10-03T10:25:27.069Z",
+   "hostedLink": null,
+   "id": "enrollment_792dcb7d",
+   "linkExpiresAt": null,
+   "state": "completed",
+   "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11"
+  },
+  "method": "PATCH",
+  "operation": "update_bank_link",
+  "path": "/bank-links/{bankLinkId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "message": "Transactions synced successfully"
+  },
+  "method": "POST",
+  "operation": "sync_bank_link",
+  "path": "/bank-links/{bankLinkId}/sync",
+  "status": 200
+ },
+ {
+  "body": {
+   "items": [
+    {
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "connectionId": "conn_abc123def456",
+     "createdAt": "2025-10-03T10:55:42.000Z",
+     "id": "e4b7c9a2-1d3f-4e8a-9c6b-5f2d7a0e8b1c",
+     "institutionName": "Chase",
+     "provider": "PLAID",
+     "state": "active",
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+     "syncCursor": null,
+     "updatedAt": "2025-10-03T10:55:42.000Z",
+     "webhook": {
+      "status": "confirmed",
+      "url": "https://example.com/webhooks/banking"
+     }
+    }
+   ],
+   "pagination": {
+    "hasMore": false
+   }
+  },
+  "method": "GET",
+  "operation": "list_bank_subscriptions",
+  "path": "/bank-subscriptions",
+  "status": 200
+ },
+ {
+  "body": {
+   "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+   "connectionId": "conn_abc123def456",
+   "createdAt": "2025-10-03T10:55:42.000Z",
+   "id": "e4b7c9a2-1d3f-4e8a-9c6b-5f2d7a0e8b1c",
+   "institutionName": "Chase",
+   "provider": "PLAID",
+   "state": "active",
+   "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+   "syncCursor": null,
+   "updatedAt": "2025-10-03T10:55:42.000Z",
+   "webhook": {
+    "status": "confirmed",
+    "url": "https://example.com/webhooks/banking"
+   }
+  },
+  "method": "GET",
+  "operation": "get_bank_subscription_by_connection",
+  "path": "/bank-subscriptions/by-connection/{connectionId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+   "connectionId": "conn_abc123def456",
+   "createdAt": "2025-10-03T10:55:42.000Z",
+   "id": "e4b7c9a2-1d3f-4e8a-9c6b-5f2d7a0e8b1c",
+   "institutionName": "Chase",
+   "provider": "PLAID",
+   "state": "active",
+   "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+   "syncCursor": null,
+   "updatedAt": "2025-10-03T10:55:42.000Z",
+   "webhook": {
+    "status": "confirmed",
+    "url": "https://example.com/webhooks/banking"
+   }
+  },
+  "method": "GET",
+  "operation": "get_bank_subscription",
+  "path": "/bank-subscriptions/{bankSubscriptionId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "items": [
+    {
+     "_links": {
+      "bankAccount": {
+       "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+      },
+      "card": {
+       "href": "/cards/5dec2c49-0aa5-4683-a317-427eb5d115f3"
+      },
+      "match": {
+       "href": "/transaction-matches/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e"
+      },
+      "self": {
+       "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c"
+      }
+     },
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "amount": 42.5,
+     "bankAccountId": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+     "cardId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+     "category": [
+      "Travel"
+     ],
+     "createdAt": "2025-10-15T14:30:00.000Z",
+     "currency": "USD",
+     "date": "2025-10-15",
+     "description": "UBER TRIP",
+     "id": "7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c",
+     "matchId": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+     "merchantName": "Uber",
+     "settlement": null,
+     "source": "PLAID",
+     "status": "matched",
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+     "transactionType": "debit"
+    },
+    {
+     "_links": {
+      "bankAccount": {
+       "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+      },
+      "self": {
+       "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/2e5f8a1b-4c7d-3e9f-b0a2-8d6c4f1e7b3a"
+      }
+     },
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "amount": 156.23,
+     "bankAccountId": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+     "cardId": null,
+     "category": [
+      "Shopping"
+     ],
+     "createdAt": "2025-10-14T09:15:00.000Z",
+     "currency": "USD",
+     "date": "2025-10-14",
+     "description": "AMAZON MARKETPLACE",
+     "id": "2e5f8a1b-4c7d-3e9f-b0a2-8d6c4f1e7b3a",
+     "matchId": null,
+     "merchantName": "Amazon",
+     "settlement": null,
+     "source": "PLAID",
+     "status": "posted",
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+     "transactionType": "debit"
+    }
+   ],
+   "pagination": {
+    "cursor": "ZXhhbXBsZQ==",
+    "hasMore": true
+   }
+  },
+  "method": "GET",
+  "operation": "list_bank_transactions",
+  "path": "/bank-transactions/{subaccountId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "emitted": 2,
+   "failed": [],
+   "matched": 1,
+   "message": "Processed 1 transactions",
+   "resent": 0,
+   "skipped": 0
+  },
+  "method": "POST",
+  "operation": "trigger_bank_transaction_webhooks",
+  "path": "/bank-transactions/{subaccountId}/webhooks",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "bankAccount": {
+     "href": "/bank-accounts/3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c"
+    },
+    "card": {
+     "href": "/cards/5dec2c49-0aa5-4683-a317-427eb5d115f3"
+    },
+    "match": {
+     "href": "/transaction-matches/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e"
+    },
+    "self": {
+     "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c"
+    }
+   },
+   "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+   "amount": 42.5,
+   "bankAccountId": "3a8f2c1d-5e7b-4d9a-b6c8-9f0e1d2a3b4c",
+   "cardId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+   "category": [
+    "Travel"
+   ],
+   "createdAt": "2025-10-15T14:30:00.000Z",
+   "currency": "USD",
+   "date": "2025-10-15",
+   "description": "UBER TRIP",
+   "id": "7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c",
+   "matchId": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+   "merchantName": "Uber",
+   "settlement": {
+    "emissionType": "early_clearing",
+    "emittedAt": "2025-10-15T15:00:00.000Z",
+    "state": "early_cleared",
+    "supersededAt": null
+   },
+   "source": "PLAID",
+   "status": "early_cleared",
+   "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11",
+   "transactionType": "debit"
+  },
+  "method": "GET",
+  "operation": "get_bank_transaction",
+  "path": "/bank-transactions/{subaccountId}/{transactionId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "items": [
+    {
+     "_links": {
+      "bankTransaction": {
+       "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c"
+      },
+      "cardTransaction": {
+       "href": "/transactions/a9b8c7d6-e5f4-3a2b-1c0d-9e8f7a6b5c4d"
+      },
+      "self": {
+       "href": "/transaction-matches/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e"
+      }
+     },
+     "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+     "bankTransaction": {
+      "amount": 42.5,
+      "currency": "USD",
+      "date": "2025-10-15",
+      "description": "UBER TRIP",
+      "merchantName": "Uber"
+     },
+     "bankTransactionId": "7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c",
+     "cardTransaction": {
+      "amount": 42.5,
+      "currency": "USD",
+      "date": "2025-10-15",
+      "descriptor": "UBER TRIP"
+     },
+     "cardTransactionId": "a9b8c7d6-e5f4-3a2b-1c0d-9e8f7a6b5c4d",
+     "confidence": "HIGH",
+     "createdAt": "2025-10-15T14:31:00.000Z",
+     "id": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+     "reasons": [
+      {
+       "bankValue": "42.50",
+       "cardValue": "42.50",
+       "diff": 0,
+       "message": "Exact amount match ($42.50)",
+       "score": 1,
+       "type": "Amount"
+      },
+      {
+       "bankValue": "2025-10-15",
+       "cardValue": "2025-10-15",
+       "diff": 0,
+       "message": "Transaction dates within 1 day",
+       "score": 0.9,
+       "type": "Date"
+      },
+      {
+       "bankValue": "Uber",
+       "cardValue": "UBER TRIP",
+       "diff": 0,
+       "message": "Merchant name contains match (Uber)",
+       "score": 0.85,
+       "type": "Merchant"
+      }
+     ],
+     "score": 0.85,
+     "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11"
+    }
+   ],
+   "pagination": {
+    "hasMore": false
+   }
+  },
+  "method": "GET",
+  "operation": "list_transaction_matches",
+  "path": "/transaction-matches/{subaccountId}",
+  "status": 200
+ },
+ {
+  "body": {
+   "_links": {
+    "bankTransaction": {
+     "href": "/bank-transactions/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c"
+    },
+    "card": {
+     "href": "/cards/5dec2c49-0aa5-4683-a317-427eb5d115f3"
+    },
+    "cardTransaction": {
+     "href": "/transaction-messages/a9b8c7d6-e5f4-3a2b-1c0d-9e8f7a6b5c4d"
+    },
+    "self": {
+     "href": "/transaction-matches/1fcb895e-9217-4a6f-9d10-5a7dcef86c11/b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e"
+    }
+   },
+   "accountId": "8f3a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+   "bankTransaction": {
+    "amount": 42.5,
+    "currency": "USD",
+    "date": "2025-10-15",
+    "description": "UBER TRIP",
+    "merchantName": "Uber"
+   },
+   "bankTransactionId": "7f2a9c4e-3b1d-4e8f-a5c7-6d0e2f9b8a3c",
+   "cardTransaction": {
+    "amount": 42.5,
+    "cardId": "5dec2c49-0aa5-4683-a317-427eb5d115f3",
+    "currency": "USD",
+    "date": "2025-10-15",
+    "descriptor": "UBER TRIP"
+   },
+   "cardTransactionId": "a9b8c7d6-e5f4-3a2b-1c0d-9e8f7a6b5c4d",
+   "confidence": "HIGH",
+   "createdAt": "2025-10-15T14:31:00.000Z",
+   "id": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+   "reasons": [
+    {
+     "bankValue": "42.50",
+     "cardValue": "42.50",
+     "diff": 0,
+     "message": "Exact amount match ($42.50)",
+     "score": 1,
+     "type": "Amount"
+    },
+    {
+     "bankValue": "2025-10-15",
+     "cardValue": "2025-10-15",
+     "diff": 0,
+     "message": "Transaction dates within 1 day",
+     "score": 0.9,
+     "type": "Date"
+    },
+    {
+     "bankValue": "Uber",
+     "cardValue": "UBER TRIP",
+     "diff": 0,
+     "message": "Merchant name contains match (Uber)",
+     "score": 0.85,
+     "type": "Merchant"
+    }
+   ],
+   "score": 0.85,
+   "subaccountId": "1fcb895e-9217-4a6f-9d10-5a7dcef86c11"
+  },
+  "method": "GET",
+  "operation": "get_transaction_match",
+  "path": "/transaction-matches/{subaccountId}/{transactionMatchId}",
+  "status": 200
+ },
+ {
+  "body": null,
+  "method": "DELETE",
+  "operation": "delete_card_subscription",
+  "path": "/card-subscriptions/{subscriptionId}",
+  "status": 204
+ },
+ {
+  "body": null,
+  "method": "DELETE",
+  "operation": "delete_network_bulk_feed",
+  "path": "/network-bulk-feeds/{networkBulkFeedId}",
+  "status": 204
+ },
+ {
+  "body": null,
+  "method": "POST",
+  "operation": "simulate_bulk_feed_file_gl",
+  "path": "/simulate/ingestion/amex-gl",
+  "status": 202
+ },
+ {
+  "body": null,
+  "method": "POST",
+  "operation": "simulate_bulk_feed_file_smartdata",
+  "path": "/simulate/ingestion/smartdata",
+  "status": 202
+ },
+ {
+  "body": null,
+  "method": "POST",
+  "operation": "simulate_bulk_feed_file_vbds",
+  "path": "/simulate/ingestion/vbds",
+  "status": 202
+ },
+ {
+  "body": null,
+  "method": "POST",
+  "operation": "simulate_bulk_feed_file_vcf",
+  "path": "/simulate/ingestion/vcf",
+  "status": 202
+ },
+ {
+  "body": {
+   "transactions": [
+    {
+     "messageIds": [
+      "9b2e6c4a-1f3d-4e8b-9a7c-2d5f8e1b4c6a",
+      "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+     ]
+    }
+   ]
+  },
+  "method": "POST",
+  "operation": "simulate_transaction_scenario",
+  "path": "/simulate/transaction/scenario",
+  "status": 202
+ },
+ {
+  "body": {
+   "messageId": "9b2e6c4a-1f3d-4e8b-9a7c-2d5f8e1b4c6a"
+  },
+  "method": "POST",
+  "operation": "simulate_transaction",
+  "path": "/simulate/transactions",
+  "status": 202
+ },
+ {
+  "body": {
+   "messageId": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+  },
+  "method": "POST",
+  "operation": "simulate_transaction_message",
+  "path": "/simulate/transactions/{transactionId}",
+  "status": 202
+ },
+ {
+  "body": null,
+  "method": "DELETE",
+  "operation": "delete_subaccount",
+  "path": "/subaccounts/{subaccountId}",
+  "status": 204
+ }
+]
