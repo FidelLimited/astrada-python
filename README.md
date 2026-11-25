@@ -358,6 +358,40 @@ else:
 print("recorded:", message.created_date_time.isoformat())
 ```
 
+## Filter, sort and expand lists
+
+List methods take their filters as keyword arguments next to `limit`; several filters return only what matches
+all of them, with one exception: `list_transactions` answers `400` to `card_id` and `network_bulk_feed_id`
+together. Its `company_id`, `legal_entity_id` and `legal_entity_name` filters read cardholder data, so they need
+the `cardholder:read` scope. `list_transactions` also takes `order` (`"desc"`, newest `created_at` first, is the
+default; `"asc"` is oldest first). `expand` inlines related resources under `embedded` in the same response, so a
+transaction can carry its card, card subscription and cardholder without more calls. An embedded resource is
+there only when you asked for it and it exists, and it shows its current values, except a cardholder's
+`corporate`, which is the one in effect on the transaction's date (its `network_token` is always the current
+one). Each expanded resource needs its own read scope (`cards:read`, `card-subscriptions:read`,
+`cardholder:read`).
+
+```python
+subaccount_id = "6f1c2a3b-4d5e-4f60-8a7b-9c0d1e2f3a4b"
+
+# Filters: the subaccount's active card subscriptions, and its US cards that expire in 2027.
+active = client.card_subscription.list_card_subscriptions(subaccount_id=subaccount_id, state="active", limit=50)
+expiring = client.card.list_cards(subaccount_id=subaccount_id, country="USA", expiry_year=2027)
+print(len(active.embedded.card_subscriptions), len(expiring.embedded.cards))
+
+# Sort and expand: the oldest transactions first, each with its card and cardholder inlined.
+page = client.transactions.list_transactions(
+    subaccount_id=subaccount_id, order="asc", expand=["card", "cardholder"], limit=10
+)
+for transaction in page.embedded.transactions:
+    embedded = transaction.embedded  # None when nothing was expanded
+    card = embedded.card if embedded else None
+    cardholder = embedded.cardholder if embedded else None
+    print(transaction.id, card.last4digits if card else None, cardholder.last_name if cardholder else None)
+```
+
+`astrada.paginate` (below) keeps the filters, the order and `expand` on every page.
+
 ## Pagination
 
 List methods return one page. `astrada.paginate` walks every page for you and yields the items; it
@@ -527,6 +561,12 @@ The full reference, built from the code, is at
 [fidellimited.github.io/astrada-python](https://fidellimited.github.io/astrada-python/astrada.html).
 Each method is also described on the API reference at
 [docs.astrada.co/reference](https://docs.astrada.co/reference).
+
+For AI agents and other tools, the same site serves
+[llms.txt](https://fidellimited.github.io/astrada-python/llms.txt) (an index of markdown copies of this README's
+sections and of the reference, in the llmstxt.org format) and
+[llms-full.txt](https://fidellimited.github.io/astrada-python/llms-full.txt) (all of it in one file), built with
+the HTML from the same sources.
 
 | Client attribute | Method | HTTP request |
 |---|---|---|

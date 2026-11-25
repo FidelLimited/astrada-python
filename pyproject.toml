@@ -1,6 +1,6 @@
 [project]
 name = "astrada"
-version = "2.0.0"
+version = "2.0.1"
 description = "The Astrada API client for Python"
 authors = [
   {name = "Peter Swanson", email = "email@peterswanson.tech"},

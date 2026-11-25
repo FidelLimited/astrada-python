@@ -32,6 +32,9 @@ jobs:
           pip install -r requirements.txt -r test-requirements.txt
           pdoc astrada astrada.banking astrada.sandbox astrada.testing astrada.pagination \
             astrada.webhooks astrada.environments -o site
+          # llms.txt, llms-full.txt and markdown copies of the README and the reference, for AI
+          # agents, from the same sources (fails when a linked page was not written).
+          python tools/llms.py site
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
           path: site
