@@ -6,4 +6,4 @@ mypy >= 1.5
 # The README's webhook example is a Flask app; the tests run it.
 flask >= 3.0
 # The reference site (pdoc astrada).
-pdoc >= 15
+pdoc >= 15, < 17  # tools/llms.py reads pdoc.doc
